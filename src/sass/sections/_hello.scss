@@ -1,0 +1,100 @@
+.hello {
+    width: 100%;
+    max-width: 576px;
+    padding: 66px 46px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__close {
+        line-height: 0;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    &__dagger {}
+
+    &__title {
+        color: #000;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__desc {
+        color: #000;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 42px;
+    }
+
+    &__form {}
+
+    &__label {
+        display: block;
+        color: #000;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__input {
+        display: block;
+        padding: 10px;
+        width: 169px;
+        border: none;
+        background-color: #D7D7D7;
+        border-radius: 20px;
+        margin: 18px auto 0;
+        color: #000;
+        font-size: 12px;
+        font-weight: 400;
+
+        &::placeholder {
+            color: #7E7E7E;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #000;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 18px auto 0;
+    }
+
+    &__icon {
+        position: absolute;
+
+        &--sword {
+            left: 41px;
+            bottom: 132px;
+        }
+
+        &--puzzel {
+            left: 85px;
+            bottom: 56px;
+        }
+
+        &--game {
+            right: 85px;
+            bottom: 56px;
+        }
+
+        &--layout {
+            right: 41px;
+            bottom: 132px;
+        }
+    }
+
+}
