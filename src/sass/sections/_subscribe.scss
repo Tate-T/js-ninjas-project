@@ -3,7 +3,7 @@
     max-width: 463px;
     min-height: 245px;
     padding-top: 83px;
-    background-color: #ffffff;
+    background-color: $body-bg-color;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -20,7 +20,7 @@
     &__dagger {}
 
     &__title {
-        color: #000;
+        color: $text-color;
         text-align: center;
         font-size: 20px;
         font-weight: 400;
