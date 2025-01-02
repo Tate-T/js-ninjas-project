@@ -1,0 +1,20 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="search" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M24.087 13.043c0 6.099-4.944 11.043-11.043 11.043s-11.043-4.944-11.043-11.043c0-6.099 4.944-11.043 11.043-11.043s11.043 4.944 11.043 11.043z"></path>
+<path d="M28.586 31.414c0.781 0.781 2.047 0.781 2.828 0s0.781-2.047 0-2.828l-2.828 2.828zM22.936 20.108l-1.414-1.414-2.828 2.828 1.414 1.414 2.828-2.828zM31.414 28.586l-8.478-8.478-2.828 2.828 8.478 8.478 2.828-2.828z"></path>
+</symbol>
+<symbol id="arrow-down" viewBox="0 0 50 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M45.714 4.571l-20.571 22.857-20.571-22.857"></path>
+</symbol>
+<symbol id="mouse" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="6.9565" d="M16.317 28.123l-11.806-23.611 23.611 11.806-9.784 2.021-2.022 9.784z"></path>
+</symbol>
+<symbol id="arrow" viewBox="0 0 16 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3137" d="M0.314 0.314l15.686 15.686-15.686 15.686"></path>
+</symbol>
+<symbol id="close-modal" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M1.882 1.882l14.118 14.118M30.118 30.118l-14.118-14.118M16 16l-14.118 14.118"></path>
+</symbol>
+</defs>
+</svg>
