@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 576px;
     padding: 66px 46px;
-    background-color: #ffffff;
+    background-color: $body-bg-color;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -19,14 +19,14 @@
     &__dagger {}
 
     &__title {
-        color: #000;
+        color: $text-color;
         text-align: center;
         font-size: 12px;
         font-weight: 400;
     }
 
     &__desc {
-        color: #000;
+        color: $text-color;
         text-align: center;
         font-size: 12px;
         font-weight: 400;
@@ -37,7 +37,7 @@
 
     &__label {
         display: block;
-        color: #000;
+        color: $text-color;
         text-align: center;
         font-size: 12px;
         font-weight: 400;
@@ -48,15 +48,15 @@
         padding: 10px;
         width: 169px;
         border: none;
-        background-color: #D7D7D7;
+        background-color: $input-color;
         border-radius: 20px;
         margin: 18px auto 0;
-        color: #000;
+        color: $text-color;
         font-size: 12px;
         font-weight: 400;
 
         &::placeholder {
-            color: #7E7E7E;
+            color: $placeholder-color;
             font-size: 12px;
             font-weight: 400;
         }
@@ -65,9 +65,9 @@
     &__btn {
         padding: 10px 20px;
         border-radius: 20px;
-        background-color: #000;
+        background-color: $text-color;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        color: #FFF;
+        color: $btn-svg-color;
         font-size: 12px;
         font-weight: 400;
         margin: 18px auto 0;
