@@ -7,6 +7,13 @@ body {
     background-color: $bg-body;
 }
 
+.main{
+    background-image: url(../../img/1x/bg/left-bg@1x.webp),url(../../img/1x/bg/right-bg@1x.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: contain;
+}
+
 .backdrop {
     background-color: #00000025;
     position: fixed;
