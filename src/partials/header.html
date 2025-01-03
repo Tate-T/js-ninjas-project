@@ -2,18 +2,23 @@
   <div class="container">
     <a href="./index.html" class="header__logo">
       <svg class="header__icon" width="93" height="38.15">
-        <use href=""></use>
+        <use href="./svg/icons.svg#logo"></use>
       </svg>
     </a>
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
-          <select class="header__select" id="tasks-select">
-            <option hidden checked value="base">Інтерактив</option>
-            <option value="numerical">Числовий</option>
-            <option value="game">Ігровий</option>
-            <option value="acquaintance">Ознайомчий</option>
-          </select>
+          <button class="header__select" id="tasks-select">
+            Інтерактив
+            <svg class="header__arrow" width="5" height="9">
+              <use href="./svg/icons.svg#arrow"></use>
+            </svg>
+          </button>
+          <ul class="header__sublist is-hidden">
+            <li class="header__subitem" id="numerical">Числовий</li>
+            <li class="header__subitem" id="game">Ігровий</li>
+            <li class="header__subitem" id="acquaintance">Ознайомчий</li>
+          </ul>
         </li>
         <li class="header__item">
           <a href="" class="header__link">Наша команда</a>
@@ -24,9 +29,9 @@
       </ul>
     </nav>
     <button class="header__btn" id="theme-btn">
-      <span class="header__wrapper"
-        ><img src="" alt="" class="header__img"
-      /></span>
+      <div class="header__wrapper">
+        <img src="" alt="" class="header__img" />
+      </div>
     </button>
     <p class="header__text">
       Вітаємо, <span class="header__name" id="user-name"></span>!
