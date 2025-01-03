@@ -16,5 +16,11 @@
 <symbol id="close-modal" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M1.882 1.882l14.118 14.118M30.118 30.118l-14.118-14.118M16 16l-14.118 14.118"></path>
 </symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 16 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3137" d="M16 0.314l-15.686 15.686 15.686 15.686"></path>
+</symbol>
+<symbol id="icon-arrow-rigth" viewBox="0 0 16 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3137" d="M0.314 0.314l15.686 15.686-15.686 15.686"></path>
+</symbol>
 </defs>
 </svg>
