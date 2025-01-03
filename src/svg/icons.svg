@@ -7,9 +7,6 @@
 <symbol id="arrow-down" viewBox="0 0 50 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M45.714 4.571l-20.571 22.857-20.571-22.857"></path>
 </symbol>
-<symbol id="mouse" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="6.9565" d="M16.317 28.123l-11.806-23.611 23.611 11.806-9.784 2.021-2.022 9.784z"></path>
-</symbol>
 <symbol id="arrow" viewBox="0 0 16 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3137" d="M0.314 0.314l15.686 15.686-15.686 15.686"></path>
 </symbol>

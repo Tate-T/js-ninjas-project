@@ -1,7 +1,21 @@
 <section class="football">
   <h2 class="football__title">Футбол</h2>
   <div class="football__field">
-    <img src="" alt="Football" class="football__img" />
+    <picture>
+      <source
+        srcset="
+          ./img/1x/football/ball@1x.webp 1x,
+          ./img/2x/football/ball@2x.webp 2x
+        "
+      />
+      <img
+        class="football__img"
+        width="50"
+        height="50"
+        src="./img/1x/football/ball@1x.webp 1x"
+        alt="М'ячик"
+      />
+    </picture>
   </div>
   <hr class="football__line" />
 </section>
