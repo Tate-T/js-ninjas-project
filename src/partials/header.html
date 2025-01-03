@@ -95,7 +95,21 @@
     </nav>
     <button class="header__btn" id="theme-btn">
       <div class="header__wrapper">
-        <img src="" alt="" class="header__img" />
+        <picture>
+          <source
+            srcset="
+              ./img/1x/header/light-theme@1x.webp 1x,
+              ./img/2x/header/light-theme@2x.webp 2x
+            "
+          />
+          <img
+            class="header__img"
+            width="15"
+            height="15"
+            src="./img/1x/header/light-theme@1x.webp 1x"
+            alt="Сонечко"
+          />
+        </picture>
       </div>
     </button>
     <p class="header__text">

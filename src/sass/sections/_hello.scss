@@ -1,7 +1,7 @@
 .hello {
     width: 100%;
     max-width: 576px;
-    padding: 66px 46px;
+    padding: 46px 66px;
     background-color: $body-bg-color;
     border-radius: 20px;
     position: absolute;
@@ -16,7 +16,9 @@
         top: 30px;
     }
 
-    &__dagger {}
+    &__dagger {
+        stroke: $text-color;
+    }
 
     &__title {
         color: $text-color;
@@ -75,6 +77,8 @@
 
     &__icon {
         position: absolute;
+        width: 30px;
+        height: 30px;
 
         &--sword {
             left: 41px;

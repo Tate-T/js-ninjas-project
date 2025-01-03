@@ -2,21 +2,69 @@
   <div class="subscribe">
     <button data-subscribe-close class="subscribe__close">
       <svg class="subscribe__dagger" width="15" height="15">
-        <use href=""></use>
+        <use href="./svg/icons.svg#close-modal"></use>
       </svg>
     </button>
     <h2 class="subscribe__title">Дякую за підписку!</h2>
-    <svg class="subscribe__icon subscribe__icon--sword" width="30" height="30">
-      <use href=""></use>
-    </svg>
-    <svg class="subscribe__icon subscribe__icon--puzzel" width="30" height="30">
-      <use href=""></use>
-    </svg>
-    <svg class="subscribe__icon subscribe__icon--game" width="30" height="30">
-      <use href=""></use>
-    </svg>
-    <svg class="subscribe__icon subscribe__icon--layout" width="30" height="30">
-      <use href=""></use>
-    </svg>
+    <picture>
+      <source
+        srcset="
+          ./img/1x/modal/sword@1x.webp 1x,
+          ./img/2x/modal/sword@2x.webp 2x
+        "
+      />
+      <img
+        class="subscribe__icon subscribe__icon--sword"
+        width="30"
+        height="30"
+        src="./img/1x/modal/sword@1x.webp 1x"
+        alt="Меч"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./img/1x/modal/puzzle@1x.webp 1x,
+          ./img/2x/modal/puzzle@2x.webp 2x
+        "
+      />
+      <img
+        class="subscribe__icon subscribe__icon--puzzel"
+        width="30"
+        height="30"
+        src="./img/1x/modal/puzzle@1x.webp 1x"
+        alt="Пазл"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./img/1x/modal/tic-tac-toe@1x.webp 1x,
+          ./img/2x/modal/tic-tac-toe@2x.webp 2x
+        "
+      />
+      <img
+        class="subscribe__icon subscribe__icon--game"
+        width="30"
+        height="30"
+        src="./img/1x/modal/tic-tac-toe@1x.webp 1x"
+        alt="Хрестики-Нолики"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./img/1x/modal/game-development@1x.webp 1x,
+          ./img/2x/modal/game-development@2x.webp 2x
+        "
+      />
+      <img
+        class="subscribe__icon subscribe__icon--layout"
+        width="30"
+        height="30"
+        src="./img/1x/modal/game-development@1x.webp 1x"
+        alt="Пазл"
+      />
+    </picture>
   </div>
 </div>
