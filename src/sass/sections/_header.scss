@@ -67,10 +67,10 @@
         font-size: 12px;
         font-weight: 400;
         cursor: pointer;
-        background-color: #ffffff;
+        background-color: $body-bg-color;
 
         &:hover {
-            background-color: #F1F1F1;
+            background-color: $interactiv;
         }
     }
 
@@ -82,7 +82,7 @@
 
     &__btn {
         margin-left: auto;
-        background-color: #7a7a7a;
+        background-color: $bg-toogle-btn;
         width: 40px;
         border-radius: 11px;
 
