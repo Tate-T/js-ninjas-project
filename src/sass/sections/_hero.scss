@@ -1,0 +1,21 @@
+.hero {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    &__title {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    &__line {
+        width: 536px;
+        height: 0px;
+        margin: 0 auto;
+    }
+}

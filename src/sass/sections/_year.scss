@@ -1,0 +1,43 @@
+.year {
+    padding-bottom: 36px;
+
+    &__title {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    &__form {
+        margin-bottom: 46px;
+    }
+
+    &__input {
+        display: inline-flex;
+        padding: 10px;
+        align-items: flex-start;
+        border-radius: 20px 0 0 20px;
+        background: #D7D7D7;
+        width: 180px;
+        border: none;
+
+        &::placeholder {
+            color: #7E7E7E;
+            font-family: "Montserrat Alternates";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &__line {
+        width: 536px;
+        height: 0px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,23 @@
+.calculator {
+    padding-bottom: 36px;
+
+    &__title {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 59px;
+    }
+
+    &__line {
+        width: 536px;
+        height: 0px;
+        stroke-width: 1px;
+        stroke: #000;
+        margin: 0 auto;
+        margin-top: 58px;
+    }
+}
