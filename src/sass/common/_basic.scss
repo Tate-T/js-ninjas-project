@@ -7,11 +7,17 @@ body {
     background-color: $bg-body;
 }
 
-.main{
-    background-image: url(../../img/1x/bg/left-bg@1x.webp),url(../../img/1x/bg/right-bg@1x.webp);
+.main {
+    background-image: url(../../img/1x/bg/left-bg@1x.webp), url(../../img/1x/bg/right-bg@1x.webp);
     background-repeat: no-repeat, no-repeat;
     background-position: left, right;
     background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../../img/2x/bg/left-bg@2x.webp), url(../../img/2x/bg/right-bg@2x.webp);
+    }
 }
 
 .backdrop {
