@@ -1,5 +1,5 @@
 .scientist {
-    padding: 18px 0 36px;
+    padding-bottom: 36px;
 
     &__title {
         color: $text-color;
@@ -32,7 +32,7 @@
 
         &:hover {
             transform: scale(1.1);
-            background-color: #cacaca;
+            background-color: $choose-scientist;
         }
     }
 
@@ -85,7 +85,7 @@
         background-color: $bg-black-color;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
         padding: 10px 20px;
-        color: #FFF;
+        color: $btn-svg-color;
         text-align: right;
         font-family: "Montserrat Alternates";
         font-size: 12px;
