@@ -40,3 +40,9 @@ body {
 .no-scroll {
     overflow: hidden;
 }
+
+body {
+    font-family: "Montserrat Alternates", serif;
+    background-color: $bg-body;
+    font-weight: 400;
+}

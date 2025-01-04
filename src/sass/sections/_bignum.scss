@@ -1,0 +1,42 @@
+.bignum{
+
+    padding-bottom: 36px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        gap: 38px;
+        padding:36px 0px 36px 0px;
+    }
+
+    &__input {
+        color: #7E7E7E;
+        font-size: 12px;
+        padding: 10px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: #D7D7D7;
+        display: inline-flex;
+        border: none;
+        text-align: center;
+        align-items: flex-start;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__line {
+        width: 538px;
+        height: 0;
+        flex-shrink: 0;
+        stroke-width: 1px;
+        stroke: black;
+        margin: 36px auto 0px auto;
+    }
+}
