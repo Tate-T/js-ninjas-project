@@ -2,6 +2,11 @@
 
     padding-bottom: 36px;
 
+
+    &__form {
+        position: relative;
+    }
+
     &__box {
         display: flex;
         justify-content: center;
@@ -16,56 +21,59 @@
         font-style: normal;
         line-height: normal;
         text-align: center;
-    }   
+    }
 
 
     &__line1 {
-        border: dashed;
+        border: 1px dashed;
         height: 0px;
         width: 150px;
-        margin-top: 15px;
+        margin-top: 18px;
     }
 
     &__input {
         border-radius: 20px;
         background: #D7D7D7;
         display: inline-flex;
-        padding: 10px 45px 10px 10px;
+        padding: 10px 43px 10px 10px;
         align-items: flex-start;
         gap: 10px;
         position: relative;
-
+        border: none;
+        width: 200px;
     }
 
     &__bth {
         background-color: #000;
         border-radius: 0px 20px 20px 0px;
-        height: 42px;
-        width: 55px;
+        height: 39px;
+        width: 45px;
         position: absolute;
-        top: 1242px;
-        left: 863px;
+        top: 0px;
+        left: 159px;
     }
 
     &__svg {
         fill: white;
         width: 25px;
         height: 25px;
+
     }
 
     &__text {
         color: #000;
         font-size: 12px;
         line-height: normal;
+        margin-top: 10px;
     }
 
-                &__line {
-                    width: 538px;
-                    height: 0;
-                    flex-shrink: 0;
-                    stroke-width: 1px;
-                    stroke: black;
-                    margin: 0 auto;
-                }
+    &__line {
+        width: 100%;
+        max-width: 536px;
+        height: 1px;
+        background-color: #000;
+        margin: 0 auto;
+
+    }
 
 }
