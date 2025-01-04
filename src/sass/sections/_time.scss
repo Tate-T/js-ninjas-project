@@ -1,7 +1,71 @@
 .time {
 
+    padding-bottom: 36px;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        gap: 33px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    &__calculator {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        text-align: center;
+    }   
+
+
     &__line1 {
         border: dashed;
         height: 0px;
+        width: 150px;
+        margin-top: 15px;
     }
+
+    &__input {
+        border-radius: 20px;
+        background: #D7D7D7;
+        display: inline-flex;
+        padding: 10px 45px 10px 10px;
+        align-items: flex-start;
+        gap: 10px;
+        position: relative;
+
+    }
+
+    &__bth {
+        background-color: #000;
+        border-radius: 0px 20px 20px 0px;
+        height: 42px;
+        width: 55px;
+        position: absolute;
+        top: 1242px;
+        left: 863px;
+    }
+
+    &__svg {
+        fill: white;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__text {
+        color: #000;
+        font-size: 12px;
+        line-height: normal;
+    }
+
+                &__line {
+                    width: 538px;
+                    height: 0;
+                    flex-shrink: 0;
+                    stroke-width: 1px;
+                    stroke: black;
+                    margin: 0 auto;
+                }
+
 }
