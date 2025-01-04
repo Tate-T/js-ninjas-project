@@ -51,4 +51,29 @@
     margin: 0 auto;
   }
 
+  &__checked {
+    width: 100%;
+    max-width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  &__line1 {
+    width: 100%;
+    max-width: 18px;
+    height: 3px;
+    background-color: grey;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  &__box1 {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding-bottom: 36px;
+  }
+
+
+
 }

@@ -7,8 +7,8 @@
 <symbol id="close-modal" viewBox="0 0 32 32">
 <path stroke-width="1.882" d="m1.882 1.882 28.235 28.235m-28.235.001L30.117 1.883"/>
 </symbol>
-<symbol id="icon-arrow-left" viewBox="0 0 16 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3137" d="M16 0.314l-15.686 15.686 15.686 15.686"></path>
+<symbol id="icon-arrow-rigth" viewBox="0 0 16 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3137" d="M0.314 0.314l15.686 15.686-15.686 15.686"></path>
 </symbol>
 <symbol id="icon-arrow-rigth" viewBox="0 0 16 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3137" d="M0.314 0.314l15.686 15.686-15.686 15.686"></path>
