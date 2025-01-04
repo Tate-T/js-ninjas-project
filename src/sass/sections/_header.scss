@@ -31,13 +31,16 @@
         color: $text-color;
         font-size: 12px;
         font-weight: 400;
+        display: flex;
+        gap: 6px;
+        align-items: end;
     }
 
     &__arrow {
         fill: none;
         stroke: $text-color;
-        transform: rotate(90deg);
-        margin-left: 7px;
+        box-sizing: content-box;
+        padding-bottom: 3px;
     }
 
     &__sublist {
