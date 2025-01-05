@@ -1,5 +1,4 @@
 .time {
-
     padding-bottom: 36px;
 
 
@@ -9,69 +8,79 @@
 
     &__box {
         display: flex;
-        justify-content: center;
-        gap: 33px;
-        padding-top: 36px;
-        padding-bottom: 36px;
+        margin: 36px auto;
+        width: 466px;
     }
 
     &__calculator {
-        color: #000;
+        color: $text-color;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
         text-align: center;
+        font-weight: 400;
     }
-
 
     &__line1 {
         border: 1px dashed;
         height: 0px;
-        width: 150px;
+        width: 100px;
         margin-top: 18px;
+        margin-left: 33px;
     }
 
     &__input {
         border-radius: 20px;
-        background: #D7D7D7;
+        background: $input-color;
         display: inline-flex;
         padding: 10px 43px 10px 10px;
         align-items: flex-start;
         gap: 10px;
         position: relative;
         border: none;
-        width: 200px;
+        width: 150px;
+        color: $text-color;
+        font-size: 12px;
+        font-weight: 400;
+
+        &::placeholder {
+            color: $placeholder-color;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
     }
 
     &__bth {
-        background-color: #000;
+        background-color: $text-color;
         border-radius: 0px 20px 20px 0px;
-        height: 39px;
-        width: 45px;
+        height: 100%;
+        width: 35px;
         position: absolute;
         top: 0px;
-        left: 159px;
+        right: 0;
     }
 
     &__svg {
-        fill: white;
+        fill: $btn-svg-color;
         width: 25px;
         height: 25px;
 
     }
 
     &__text {
-        color: #000;
+        color: $text-color;
         font-size: 12px;
         line-height: normal;
         margin-top: 10px;
+        margin-left: 33px;
     }
 
     &__line {
         width: 100%;
         max-width: 536px;
         height: 1px;
-        background-color: #000;
+        background-color: $text-color;
         margin: 0 auto;
 
     }
