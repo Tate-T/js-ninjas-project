@@ -1,9 +1,16 @@
 <section class="year">
     <h2 class="year__title">Перевір в який рік ти народився</h2>
     <form action="" class="year__form">
-        <label for="" class="year__label">
-            <input class="year__input" type="year" placeholder="Введіть рік народження">
-        </label>
+        <div class="year__box">
+            <label for="" class="year__label">
+                <input class="year__input" type="number" placeholder="Введіть рік народження">
+            </label>
+            <button class="year__button">
+                <svg class="year__svg" width="15" height="15">
+                    <use href="../svg/icons.svg#icon-search"></use>
+                </svg>
+            </button>
+        </div>
         <p class="year__text">Ви народилися у високосний рік!</p>
     </form>
     <hr class="year__line">
