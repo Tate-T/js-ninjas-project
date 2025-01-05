@@ -5,6 +5,7 @@
 body {
     font-family: "Montserrat Alternates", serif;
     background-color: $bg-body;
+    font-weight: 400;
 }
 
 .main {
@@ -41,8 +42,7 @@ body {
     overflow: hidden;
 }
 
-body {
-    font-family: "Montserrat Alternates", serif;
-    background-color: $bg-body;
-    font-weight: 400;
+*::selection{
+    background-color: #8ACECF;
+    color: $btn-svg-color;
 }
