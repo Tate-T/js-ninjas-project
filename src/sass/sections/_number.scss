@@ -13,6 +13,10 @@
     }
 
     &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 149px;
         margin-bottom: 46px;
     }
 
@@ -29,5 +33,28 @@
         width: 536px;
         height: 0px;
         margin: 0 auto;
+    }
+
+    &__input {
+        display: inline-flex;
+        padding: 10px;
+        align-items: flex-start;
+        border-radius: 20px 0 0 20px;
+        background: $input-color;
+        width: 180px;
+        border: none;
+
+        &::placeholder {
+            color: $placeholder-color;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    &__text {
+        color: $green-color;
+        text-align: right;
+        font-size: 12px;
+        font-weight: 400;
     }
 }
