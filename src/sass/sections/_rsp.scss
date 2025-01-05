@@ -2,7 +2,7 @@
     padding-bottom: 36px;
 
     &__title {
-        color: #000;
+        color: $text-color;
         font-family: "Montserrat Alternates";
         font-size: 16px;
         font-style: normal;
@@ -16,29 +16,38 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 107px;
+        margin-bottom: 36px;
         gap: 38px;
     }
 
     &__button {
         padding: 10px;
+        background-color: $bg-black-color;
+        border-radius: 20px;
     }
 
     &__img {
         width: 40px;
         height: 40px;
-        border-radius: 11px;
+    }
+
+    &__result {
+        color: $green-color;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 36px;
     }
 
     &__btn {
-        color: #FFF;
+        color: $btn-svg-color;
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         border-radius: 20px;
-        background: #000;
+        background: $text-color;
         padding: 10px 20px;
         gap: 10px;
         margin: 0 auto;
@@ -50,7 +59,7 @@
         width: 536px;
         height: 0px;
         stroke-width: 1px;
-        stroke: #000;
+        stroke: $text-color;
         margin: 0 auto;
     }
 }

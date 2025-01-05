@@ -1,22 +1,65 @@
 <section class="rsp">
-        <h2 class="rsp__title">Камінь - ножиці - папір</h2>
-        <ul class="rsp__list">
-                <li class="rsp__item">
-                        <button class="rsp__button">
-                                <img class="rsp__img" src="../svg/stone.png" alt="stone">
-                        </button>
-                </li>
-                <li class="rsp__item">
-                        <button class="rsp__button">
-                                <img class="rsp__img" src="../svg/scissors.png" alt="scissors">
-                        </button>
-                </li>
-                <li class="rsp__item">
-                        <button class="rsp__button">
-                                <img class="rsp__img" src="../svg/paper.png" alt="paper">
-                        </button>
-                </li>
-        </ul>
-        <p class="rsp__btn">Варіант комп’ютера</p>
-        <hr class="rsp__line">
+  <h2 class="rsp__title">Камінь - ножиці - папір</h2>
+  <ul class="rsp__list">
+    <li class="rsp__item">
+      <button class="rsp__button">
+        <picture>
+          <source
+            srcset="
+              ./img/1x/rps/stone@1x.webp 1x,
+              ./img/2x/rps/stone@2x.webp 2x
+            "
+          />
+          <img
+            class="rsp__img"
+            width="40"
+            height="40"
+            src="./img/1x/rps/stone@1x.webp 1x"
+            alt="Камінь"
+          />
+        </picture>
+      </button>
+    </li>
+    <li class="rsp__item">
+      <button class="rsp__button">
+        <picture>
+          <source
+            srcset="
+              ./img/1x/rps/scissors@1x.webp 1x,
+              ./img/2x/rps/scissors@2x.webp 2x
+            "
+          />
+          <img
+            class="rsp__img"
+            width="40"
+            height="40"
+            src="./img/1x/rps/scissors@1x.webp 1x"
+            alt="Ножиці"
+          />
+        </picture>
+      </button>
+    </li>
+    <li class="rsp__item">
+      <button class="rsp__button">
+        <picture>
+          <source
+            srcset="
+              ./img/1x/rps/paper@1x.webp 1x,
+              ./img/2x/rps/paper@2x.webp 2x
+            "
+          />
+          <img
+            class="rsp__img"
+            width="40"
+            height="40"
+            src="./img/1x/rps/paper@1x.webp 1x"
+            alt="Папір"
+          />
+        </picture>
+      </button>
+    </li>
+  </ul>
+  <p class="rsp__result">Ви виграли раунд!</p>
+  <p class="rsp__btn">Варіант комп’ютера</p>
+  <hr class="rsp__line" />
 </section>
