@@ -1,97 +1,63 @@
 <section class="scientist">
-  <h2 class="scientist__title">Обери вченого/их</h2>
-  <ul class="scientist__list" id="scientist-list">
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-    <li class="scientist__item">
-      <h3 class="scientist__subtitle">aaaaaaa</h3>
-      <p class="scientist__info">aaaaa</p>
-    </li>
-  </ul>
+  <div class="scientist__header">
+    <h2 class="scientist__title">Обери вченого/их</h2>
+    <button id="clean-btn" type="button" class="scientist__btn">Прибрати фільтрацію</button>
+  </div>
+  <ul class="scientist__list" id="scientist-list"></ul>
   <div class="scientist__wrapper">
     <ul class="scientist__filters">
       <li class="scientist__filter">
-        <button class="scientist__btn">Які вчені народилися в 19 ст.</button>
+        <button type="button" id="scientists-19-cent" class="scientist__btn">
+          Які вчені народилися в 19 ст.
+        </button>
       </li>
       <li class="scientist__filter">
-        <button class="scientist__btn">Відсортувати вчених за алфавітом</button>
+        <button type="button" id="alphabet-sort" class="scientist__btn">
+          Відсортувати вчених за алфавітом
+        </button>
       </li>
       <li class="scientist__filter">
-        <button class="scientist__btn">
+        <button type="button" id="year-sort" class="scientist__btn">
           Відсортувати вчених за кількістю прожитих років
         </button>
       </li>
       <li class="scientist__filter">
-        <button class="scientist__btn">
+        <button
+          type="button"
+          id="the-youngest-scientist"
+          class="scientist__btn"
+        >
           Знайти вченого, який народився найпізніше
         </button>
       </li>
     </ul>
     <ul class="scientist__filters">
       <li class="scientist__filter">
-        <button class="scientist__btn">
+        <button type="button" id="albert-born" class="scientist__btn">
           Знайти рік народження Albert Einshtein
         </button>
       </li>
       <li class="scientist__filter">
-        <button class="scientist__btn">
+        <button type="button" id="surname-scientists" class="scientist__btn">
           Знайти вчених, прізвища яких починаються на на літеру “С”
         </button>
       </li>
       <li class="scientist__filter">
-        <button class="scientist__btn">
+        <button type="button" id="name-scientists" class="scientist__btn">
           Видалити всіх вчених, ім’я яких починається на “А”
         </button>
       </li>
       <li class="scientist__filter">
-        <button class="scientist__btn">
+        <button
+          type="button"
+          id="elder-and-young-scientists"
+          class="scientist__btn"
+        >
           Знайти вченого, який прожив найдовше і вченого, який прожив найменше
         </button>
       </li>
     </ul>
-    <button class="scientist__btn">
+    <button type="button" id="first-letter-name-surname" class="scientist__btn">
       Знайти вчених, в яких співпадають перші літери імені і прізвища
     </button>
   </div>
