@@ -1,6 +1,6 @@
 .header {
     padding: 21px 0;
-    background-color: $body-bg-color;
+    background-color: $light-body-bg-color;
 
     & .container {
         display: flex;
@@ -28,7 +28,7 @@
     &__select {
         border: none;
         padding: 0;
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
         display: flex;
@@ -38,7 +38,7 @@
 
     &__arrow {
         fill: none;
-        stroke: $text-color;
+        stroke: $light-text-color;
         box-sizing: content-box;
         padding-bottom: 3px;
     }
@@ -46,9 +46,9 @@
     &__sublist {
         position: absolute;
         top: 48px;
-        border: 1px solid $text-color;
+        border: 1px solid $light-text-color;
         border-top: none;
-        background: $body-bg-color;
+        background: $light-body-bg-color;
         left: 50%;
         transform: translate(-50%, 0);
         width: 160px;
@@ -66,19 +66,19 @@
     &__subitem {
         padding: 10px 0;
         text-align: center;
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
         cursor: pointer;
-        background-color: $body-bg-color;
+        background-color: $light-body-bg-color;
 
         &:hover {
-            background-color: $interactiv;
+            background-color: $light-interactiv;
         }
     }
 
     &__link {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
     }
@@ -88,22 +88,21 @@
         background-color: $bg-toogle-btn;
         width: 40px;
         border-radius: 11px;
-
-        body.dark & {
-            display: flex;
-            justify-content: end;
-        }
     }
 
     &__wrapper {
         width: 20px;
         height: 20px;
-        background-color: $body-bg-color;
-        border: 0.5px solid $text-color;
+        background-color: $light-body-bg-color;
+        border: 0.5px solid $light-text-color;
         border-radius: 50%;
+        margin-left: 0;
+        padding: 1px;
 
         body.dark & {
             background-color: $bg-black-color;
+            margin-left: 20px;
+            transform: rotate(720deg);
         }
     }
 
@@ -111,11 +110,54 @@
     &__img {}
 
     &__text {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
         margin-left: 51px;
     }
 
     &__name {}
+}
+
+body.dark .header {
+    background-color: $dark-body-bg-color;
+
+    &__select {
+        color: $dark-text-color;
+    }
+
+    &__arrow {
+        stroke: $dark-text-color;
+    }
+
+    &__sublist {
+        border: 1px solid $dark-text-color;
+        background: $dark-body-bg-color;
+    }
+
+    &__subitem {
+        color: $dark-text-color;
+        background-color: $dark-body-bg-color;
+
+        &:hover {
+            background-color: $dark-interactiv;
+        }
+    }
+
+    &__link {
+        color: $dark-text-color;
+    }
+
+    &__btn {
+        background-color: $bg-toogle-btn;
+    }
+
+    &__wrapper {
+        background-color: $bg-black-color;
+        border: 0.5px solid $bg-black-color;
+    }
+
+    &__text {
+        color: $dark-text-color;
+    }
 }

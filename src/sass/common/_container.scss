@@ -4,7 +4,11 @@
     padding: 0 15px;
     margin: 0 auto;
     // outline: 3px dashed darkred;
-    background-color: $body-bg-color;
+    background-color: $light-body-bg-color;
+}
+
+body.dark .main-container{
+    background-color: $dark-body-bg-color;
 }
 
 .container {
