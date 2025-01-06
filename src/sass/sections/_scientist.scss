@@ -10,7 +10,7 @@
     }
 
     &__title {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 16px;
         font-weight: 400;
         text-align: center;
@@ -34,18 +34,18 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: $bg-gray-color;
+        background-color: $light-bg-gray-color;
         border-radius: 20px;
         cursor: pointer;
 
         &:hover {
             transform: scale(1.1);
-            background-color: $choose-scientist;
+            background-color: $light-choose-scientist;
         }
     }
 
     &__subtitle {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 8px;
         font-weight: 400;
         line-height: 1.7;
@@ -53,7 +53,7 @@
     }
 
     &__info {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 8px;
         font-weight: 400;
         line-height: 1.7;
@@ -91,7 +91,7 @@
     &__btn {
         border-radius: 20px;
         background-color: $bg-black-color;
-        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: $light-shadow;
         padding: 10px 20px;
         color: $btn-svg-color;
         text-align: right;
@@ -101,5 +101,32 @@
         font-weight: 400;
         line-height: normal;
         text-align: left;
+    }
+}
+
+body.dark .scientist {
+    &__title {
+        color: $dark-text-color;
+    }
+
+    &__item {
+        background-color: $dark-bg-gray-color;
+
+        &:hover {
+            background-color: $dark-choose-scientist;
+        }
+    }
+
+    &__subtitle {
+        color: $dark-text-color;
+
+    }
+
+    &__info {
+        color: $dark-text-color;
+    }
+
+    &__btn {
+        box-shadow: $dark-shadow;
     }
 }

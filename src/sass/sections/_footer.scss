@@ -1,6 +1,6 @@
 .footer {
     padding: 60px 0;
-    background-color: $body-bg-color;
+    background-color: $light-body-bg-color;
 
     & .container {
         display: flex;
@@ -21,14 +21,14 @@
     }
 
     &__item {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
         line-height: 1.7;
     }
 
     &__link {
-        color: $text-color;
+        color: $light-text-color;
     }
 
     &__form {
@@ -45,24 +45,24 @@
     &__label {}
 
     &__input {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
         border: none;
         border-radius: 20px;
-        background-color: $input-color;
+        background-color: $light-input-color;
         min-width: 204px;
         padding: 10px;
 
         &::placeholder {
-            color: $placeholder-color;
+            color: $light-placeholder-color;
             font-size: 12px;
             font-weight: 400;
         }
     }
 
     &__btn {
-        color: $body-bg-color;
+        color: $light-body-bg-color;
         font-size: 12px;
         font-weight: 400;
         padding: 10px;
@@ -71,9 +71,39 @@
     }
 
     &__info {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 6px;
         font-weight: 400;
         margin-top: 18px;
+    }
+}
+
+body.dark .footer {
+    background-color: $dark-body-bg-color;
+
+    &__item {
+        color: $dark-text-color;
+    }
+
+    &__link {
+        color: $dark-text-color;
+    }
+
+    &__input {
+        color: $dark-text-color;
+        background-color: $dark-input-color;
+
+        &::placeholder {
+            color: $dark-placeholder-color;
+        }
+    }
+
+    &__btn {
+        color: $btn-svg-color;
+        background-color: $bg-black-color;
+    }
+
+    &__info {
+        color: $dark-text-color;
     }
 }

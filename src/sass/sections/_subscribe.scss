@@ -3,7 +3,7 @@
     max-width: 463px;
     min-height: 245px;
     padding-top: 83px;
-    background-color: $body-bg-color;
+    background-color: $light-body-bg-color;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -18,11 +18,11 @@
     }
 
     &__dagger {
-        stroke: $text-color;
+        stroke: $light-text-color;
     }
 
     &__title {
-        color: $text-color;
+        color: $light-text-color;
         text-align: center;
         font-size: 20px;
         font-weight: 400;
@@ -52,5 +52,17 @@
             right: 43px;
             bottom: 146px;
         }
+    }
+}
+
+body.dark .subscribe {
+    background-color: $dark-body-bg-color;
+
+    &__dagger {
+        stroke: $dark-text-color;
+    }
+
+    &__title {
+        color: $dark-text-color;
     }
 }
