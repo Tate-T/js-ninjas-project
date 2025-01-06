@@ -1,6 +1,6 @@
-<div data-hello-backdrop class="backdrop is-hidden">
+<div data-hello="backdrop" class="backdrop">
   <div class="hello">
-    <button data-hello-close class="hello__close">
+    <button data-hello="close" class="hello__close">
       <svg class="hello__dagger" width="15" height="15">
         <use href="./svg/icons.svg#close-modal"></use>
       </svg>
@@ -11,7 +11,7 @@
       сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно провести
       час!
     </p>
-    <form class="hello__form">
+    <form id="hello-form" class="hello__form">
       <label class="hello__label">
         Введіть своє ім’я:
         <input
@@ -21,7 +21,7 @@
           class="hello__input"
         />
       </label>
-      <button type="submit" id="header-submit" class="hello__btn">
+      <button type="submit" id="hello-submit" class="hello__btn">
         Зберегти
       </button>
     </form>
