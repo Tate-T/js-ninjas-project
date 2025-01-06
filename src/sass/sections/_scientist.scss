@@ -1,15 +1,23 @@
 .scientist {
     padding-bottom: 36px;
 
+    &__header {
+        width: 536px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto 36px;
+        justify-content: space-between;
+    }
+
     &__title {
         color: $text-color;
         font-size: 16px;
         font-weight: 400;
         text-align: center;
-        margin-bottom: 36px;
     }
 
     &__list {
+        justify-content: center;
         display: flex;
         flex-wrap: wrap;
         max-width: 577px;
