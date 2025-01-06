@@ -32,10 +32,10 @@
         width: 135px;
         padding: 10px 20px;
         border-radius: 20px;
-        background: $input-color;
-        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        background: $light-input-color;
+        box-shadow: $dark-shadow;
         border: none;
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-style: normal;
 
@@ -46,7 +46,7 @@
         }
 
         &::placeholder {
-            color: $placeholder-color;
+            color: $light-placeholder-color;
             font-size: 12px;
             font-style: normal;
         }

@@ -13,7 +13,7 @@
     }
 
     &__calculator {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 16px;
         font-style: normal;
         line-height: normal;
@@ -31,7 +31,7 @@
 
     &__input {
         border-radius: 20px;
-        background: $input-color;
+        background: $light-input-color;
         display: inline-flex;
         padding: 10px 43px 10px 10px;
         align-items: flex-start;
@@ -39,7 +39,7 @@
         position: relative;
         border: none;
         width: 150px;
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
@@ -53,7 +53,7 @@
     }
 
     &__bth {
-        background-color: $text-color;
+        background-color: $light-text-color;
         border-radius: 0px 20px 20px 0px;
         height: 100%;
         width: 35px;
@@ -69,7 +69,7 @@
     }
 
     &__text {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 12px;
         line-height: normal;
         margin-top: 10px;
@@ -80,7 +80,7 @@
         width: 100%;
         max-width: 536px;
         height: 1px;
-        background-color: $text-color;
+        background-color: $light-text-color;
         margin: 0 auto;
 
     }

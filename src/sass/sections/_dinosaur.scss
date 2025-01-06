@@ -7,7 +7,7 @@
     padding-bottom: 36px;
 
     &__title {
-        color: $text-color;
+        color: $light-text-color;
         font-size: 16px;
         font-weight: 400;
         text-align: center;
@@ -19,7 +19,7 @@
         position: relative;
         width: 800px;
         height: 200px;
-        border: 2px solid $choose-slide;
+        border: 2px solid $light-choose-slide;
         background-color: $btn-svg-color;
         margin: 0 auto;
     }
@@ -29,7 +29,7 @@
         bottom: 0;
         width: 100%;
         height: 15px;
-        background-color: $choose-slide;
+        background-color: $light-choose-slide;
     }
 
     &__dino {
@@ -52,5 +52,14 @@
         background-image: url("../../img/1x/dino/cactus@1x.webp");
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+    &__line {
+        width: 100%;
+        max-width: 536px;
+        height: 1px;
+        background-color: $light-text-color;
+        margin: 0 auto;
+
     }
 }
