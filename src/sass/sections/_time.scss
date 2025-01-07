@@ -45,7 +45,7 @@
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 
         &::placeholder {
-            color: $placeholder-color;
+            color: $light-placeholder-color;
             font-size: 12px;
             font-weight: 400;
         }
@@ -86,3 +86,49 @@
     }
 
 }
+
+
+body.dark .time {
+
+    
+        &__calculator {
+            color: $dark-text-color;
+
+        }
+    
+    
+        &__input {
+
+            background: $dark-input-color;
+
+            color: $dark-text-color;
+
+    
+            &::placeholder {
+                color: $dark-placeholder-color;
+
+            }
+    
+        }
+    
+        &__bth {
+            background-color: $dark-text-color;
+
+        }
+    
+
+    
+        &__text {
+            color: $dark-text-color;
+
+        }
+    
+        &__line {
+
+            background-color: $dark-text-color;
+
+    
+        }
+
+}
+

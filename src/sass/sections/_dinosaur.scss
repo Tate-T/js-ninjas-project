@@ -63,3 +63,28 @@
 
     }
 }
+
+
+body.dark .dinosaur{ 
+       &__title {
+        color: $dark-text-color;
+
+    }
+
+
+    &__box {
+        border: 2px solid $dark-choose-slide;
+
+    }
+
+    &__platform {
+        background-color: $dark-choose-slide;
+    }
+
+
+
+    &__line {
+        background-color: $dark-text-color;
+
+    }
+}
