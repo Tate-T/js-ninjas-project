@@ -17,8 +17,8 @@
     }
 
     &__input {
-        color: $light-placeholder-color;
-        font-size: 12px;
+
+
         width: 135px;
         height: 35px;
         padding: 10px 20px;
@@ -37,6 +37,13 @@
             -webkit-appearance: none;
             margin: 0;
         }
+
+        &::placeholder {
+            color: $light-placeholder-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
 
     &__text {
@@ -52,7 +59,7 @@
         width: 100%;
         max-width: 536px;
         height: 1px;
-        background-color: #000;
+        background-color: $light-text-color;
         margin: 0 auto;
     }
 }
@@ -75,6 +82,10 @@ body.dark .bignum {
 
     &__text {
         color: $dark-text-color;
+    }
+
+    &__line {
+        background-color: $dark-text-color;
     }
 
 
