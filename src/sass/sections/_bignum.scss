@@ -2,11 +2,11 @@
     padding-bottom: 36px;
 
     &__title {
-    color: $light-text-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
+        color: $light-text-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
     }
 
     &__form {
@@ -17,7 +17,7 @@
     }
 
     &__input {
-        color: #7E7E7E;
+        color: $light-placeholder-color;
         font-size: 12px;
         width: 135px;
         height: 35px;
@@ -25,17 +25,18 @@
         align-items: flex-start;
         gap: 10px;
         border-radius: 20px;
-        background: #D7D7D7;
+        background: $light-input-color;
         display: inline-flex;
         border: none;
         text-align: center;
         align-items: flex-start;
-        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: $light-shadow;
+
         &::-webkit-inner-spin-button,
-            &::-webkit-outer-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
     }
 
     &__text {
@@ -54,4 +55,27 @@
         background-color: #000;
         margin: 0 auto;
     }
+}
+
+
+body.dark .bignum {
+
+    &__title {
+        color: $dark-text-color;
+    }
+
+
+
+    &__input {
+        color: $dark-placeholder-color;
+        background: $dark-input-color;
+        box-shadow: $dark-shadow;
+
+    }
+
+    &__text {
+        color: $dark-text-color;
+    }
+
+
 }

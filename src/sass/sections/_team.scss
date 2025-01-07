@@ -94,3 +94,61 @@
 
 
 }
+
+body.dark .team {
+  &__title {
+      color: $dark-text-color;
+
+    }
+  
+    &__name {
+      color: $dark-text-color;
+
+  
+    }
+  
+    &__work {
+      color: $dark-text-color;
+
+    }
+  
+    &__img {
+
+      background: $dark-bg-gray-color;
+    }
+  
+
+  
+  
+
+  
+    &__line {
+
+      background-color: $dark-text-color;
+
+    }
+  
+    &__checked {
+
+      background-color: $dark-choose-slide;
+
+    }
+  
+    &__line1 {
+
+      background-color: $dark-bg-gray-color;
+
+    }
+  
+
+  
+    &__svg-right {
+      stroke: $dark-text-color;
+
+    }
+  
+    &__svg-left {
+      stroke: $dark-text-color;
+
+    }
+}
