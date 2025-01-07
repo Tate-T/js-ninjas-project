@@ -42,7 +42,7 @@
         color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
-        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: $light-shadow;
 
         &::placeholder {
             color: $light-placeholder-color;
@@ -102,6 +102,7 @@ body.dark .time {
             background: $dark-input-color;
 
             color: $dark-text-color;
+            box-shadow: $dark-shadow;
 
     
             &::placeholder {
