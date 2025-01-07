@@ -1,6 +1,7 @@
 <section class="football">
   <h2 class="football__title">Футбол</h2>
-  <div class="football__field">
+  <div id="football-field" class="football__field">
+    <p id="football-count" class="football__count">0</p>
     <picture>
       <source
         srcset="
@@ -9,11 +10,28 @@
         "
       />
       <img
-        class="football__img"
+        id="football-ball"
+        class="football__ball"
         width="50"
         height="50"
         src="./img/1x/football/ball@1x.webp 1x"
         alt="М'ячик"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./img/1x/football/football-gates@1x.webp 1x,
+          ./img/2x/football/football-gates@2x.webp 2x
+        "
+      />
+      <img
+        id="football-gates"
+        class="football__img"
+        width="50"
+        height="50"
+        src="./img/1x/football/football-gates@1x.webp 1x"
+        alt="Ворота"
       />
     </picture>
   </div>
