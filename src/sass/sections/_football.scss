@@ -21,13 +21,28 @@
         cursor: url(../svg/cursor.svg) 4 4, pointer;
     }
 
-    &__img {
+    &__count {
+        color: $light-text-color;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 36px;
         position: absolute;
-        left: 92px;
-        top: 50%;
-        transform: translate(0, -50%);
+        left: 30px;
+        top: 20px;
+    }
+
+    &__ball {
+        pointer-events: none;
+        position: absolute;
+        transform: translate(-50%, -50%);
         width: 50px;
         height: 50px;
+    }
+
+    &__img {
+        pointer-events: none;
+        position: absolute;
+        width: 100px;
     }
 
     &__line {
