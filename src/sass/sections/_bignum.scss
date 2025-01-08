@@ -78,6 +78,11 @@ body.dark .bignum {
         background: $dark-input-color;
         box-shadow: $dark-shadow;
 
+        &::placeholder {
+            color: $dark-placeholder-color;
+
+
+        }
     }
 
     &__text {
