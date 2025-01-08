@@ -73,16 +73,27 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
-          <button class="header__select" id="tasks-select">
+          <button class="header__select" id="header-select">
             Інтерактив
             <svg class="header__arrow" width="9" height="5">
               <use href="./svg/icons.svg#arrow-down"></use>
             </svg>
           </button>
-          <ul class="header__sublist is-hidden">
-            <li class="header__subitem" id="numerical">Числовий</li>
-            <li class="header__subitem" id="game">Ігровий</li>
-            <li class="header__subitem" id="acquaintance">Ознайомчий</li>
+          <ul id="header-list" class="header__sublist is-hidden">
+            <li class="header__subitem" >
+              <button id="defalt" class="header__subbtn" type="button">
+                Без фільтрації
+              </button>
+            </li>
+            <li class="header__subitem">
+              <button id="numerical" class="header__subbtn" type="button">Числовий</button>
+            </li>
+            <li class="header__subitem">
+              <button id="game" class="header__subbtn" type="button">Ігровий</button>
+            </li>
+            <li class="header__subitem">
+              <button id="acquaintance" class="header__subbtn" type="button">Ознайомчий</button>
+            </li>
           </ul>
         </li>
         <li class="header__item">

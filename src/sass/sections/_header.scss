@@ -36,6 +36,10 @@
         align-items: end;
     }
 
+    &__select.checked &__arrow {
+        transform: rotate(-180deg) translate(0, 50%);
+    }
+
     &__arrow {
         fill: none;
         stroke: $light-text-color;
@@ -63,14 +67,15 @@
         }
     }
 
-    &__subitem {
+    &__subitem {}
+
+    &__subbtn {
         padding: 10px 0;
-        text-align: center;
         color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
-        cursor: pointer;
         background-color: $light-body-bg-color;
+        width: 100%;
 
         &:hover {
             background-color: $light-interactiv;
