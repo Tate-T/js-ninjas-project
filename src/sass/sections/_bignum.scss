@@ -17,8 +17,8 @@
     }
 
     &__input {
-        color: $light-placeholder-color;
-        font-size: 12px;
+
+
         width: 135px;
         height: 35px;
         padding: 10px 20px;
@@ -36,6 +36,14 @@
         &::-webkit-outer-spin-button {
             -webkit-appearance: none;
             margin: 0;
+        }
+
+        &::placeholder {
+            color: $light-placeholder-color;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+
         }
     }
 
@@ -71,6 +79,11 @@ body.dark .bignum {
         background: $dark-input-color;
         box-shadow: $dark-shadow;
 
+        &::placeholder {
+            color: $dark-placeholder-color;
+
+
+        }
     }
 
     &__text {

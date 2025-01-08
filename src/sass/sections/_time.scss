@@ -27,6 +27,7 @@
         width: 100px;
         margin-top: 18px;
         margin-left: 33px;
+        background-color: $light-text-color;
     }
 
     &__input {
@@ -53,7 +54,7 @@
     }
 
     &__bth {
-        background-color: $light-text-color;
+        background-color: $bg-black-color;
         border-radius: 0px 20px 20px 0px;
         height: 100%;
         width: 35px;
@@ -90,6 +91,10 @@
 
 body.dark .time {
 
+
+        &__line1 {
+            background-color: $dark-text-color;
+        }
     
         &__calculator {
             color: $dark-text-color;
@@ -112,10 +117,7 @@ body.dark .time {
     
         }
     
-        &__bth {
-            background-color: $dark-text-color;
 
-        }
     
 
     
