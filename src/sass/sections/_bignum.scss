@@ -43,7 +43,6 @@
             font-size: 12px;
             font-weight: 400;
             line-height: normal;
-
         }
     }
 
@@ -60,7 +59,7 @@
         width: 100%;
         max-width: 536px;
         height: 1px;
-        background-color: #000;
+        background-color: $light-text-color;
         margin: 0 auto;
     }
 }
@@ -88,6 +87,10 @@ body.dark .bignum {
 
     &__text {
         color: $dark-text-color;
+    }
+
+    &__line {
+        background-color: $dark-text-color;
     }
 
 

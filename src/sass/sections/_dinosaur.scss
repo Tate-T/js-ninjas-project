@@ -21,7 +21,7 @@
         height: 200px;
         border: 2px solid $light-choose-slide;
         background-color: $btn-svg-color;
-        margin: 0 auto;
+        margin: 0 auto 36px;
     }
 
     &__platform {
@@ -74,11 +74,12 @@ body.dark .dinosaur{
 
     &__box {
         border: 2px solid $dark-choose-slide;
+                background-color: $dark-bg-gray-color;
 
     }
 
     &__platform {
-        background-color: $dark-choose-slide;
+        background-color: $dark-input-color;
     }
 
 

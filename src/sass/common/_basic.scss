@@ -51,3 +51,7 @@ body.dark .backdrop {
     background-color: #8ACECF;
     color: $btn-svg-color;
 }
+
+section.is-hidden {
+    display: none;
+}
