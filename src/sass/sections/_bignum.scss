@@ -17,8 +17,9 @@
     }
 
     &__input {
-
-
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
         width: 135px;
         height: 35px;
         padding: 10px 20px;
@@ -40,9 +41,7 @@
 
         &::placeholder {
             color: $light-placeholder-color;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: normal;
+
         }
     }
 
