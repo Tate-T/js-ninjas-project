@@ -22,12 +22,11 @@
     }
 
     &__line1 {
-        border: 1px dashed;
+        border: $dark-text-color 1px dashed;
         height: 0px;
         width: 100px;
         margin-top: 18px;
         margin-left: 33px;
-        background-color: $light-text-color;
     }
 
     &__input {
@@ -91,10 +90,11 @@
 
 body.dark .time {
 
+    &__line1 {
+        border: $dark-text-color 1px dashed;
 
-        &__line1 {
-            background-color: $dark-text-color;
-        }
+    }
+
     
         &__calculator {
             color: $dark-text-color;
