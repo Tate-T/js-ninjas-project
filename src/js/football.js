@@ -23,6 +23,7 @@ gates.style.top = `${gatesY}px`;
 field.addEventListener('click', e => {
   let ballX = e.offsetX;
   let ballY = e.offsetY;
+
   if (ballX < ballWidth / 2) {
     ballX = ballWidth / 2;
   } else if (ballX > field.scrollWidth - ballWidth / 2) {
@@ -32,6 +33,27 @@ field.addEventListener('click', e => {
     ballY = ballWidth / 2;
   } else if (ballY > field.scrollHeight - ballHeight / 2) {
     ballY = field.scrollHeight - ballHeight / 2;
+  }
+
+  if (ballX + ballWidth / 2 > gatesX + gatesWidth) {
+    ballX = gatesX + gatesWidth - ballWidth / 2;
+    ball.style.left = `${ballX}px`;
+  }
+
+  if (
+    ballX - ballWidth / 2 >= gatesX &&
+    ballX + ballWidth / 2 <= gatesX + gatesWidth &&
+    ballY - ballHeight / 2 < gatesY
+  ) {
+    ballY = gatesY + ballHeight / 2;
+    ball.style.top = `${ballY}px`;
+  } else if (
+    ballX - ballWidth / 2 >= gatesX &&
+    ballX + ballWidth / 2 <= gatesX + gatesWidth &&
+    ballY + ballHeight / 2 > gatesY + gatesHeight
+  ) {
+    ballY = gatesY + gatesHeight - ballHeight / 2;
+    ball.style.top = `${ballY}px`;
   }
   ball.style.left = `${ballX}px`;
   ball.style.top = `${ballY}px`;
@@ -51,6 +73,4 @@ field.addEventListener('click', e => {
       ball.style.top = `${ballY}px`;
     }, 1000);
   }
-
-  console.log(`Ball x: ${ballX}, y: ${ballY}`);
 });
