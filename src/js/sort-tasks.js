@@ -61,7 +61,6 @@ const gameBtn = document.querySelector('#game');
 const acquaintanceBtn = document.querySelector('#acquaintance');
 
 const sections = document.querySelectorAll('section');
-console.log(sections);
 
 button.addEventListener('click', () => {
   list.classList.toggle('is-hidden');
