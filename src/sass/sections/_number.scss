@@ -2,7 +2,7 @@
     padding-bottom: 36px;
 
     &__title {
-        color: #000;
+        color: $light-text-color;
         font-family: "Montserrat Alternates";
         font-size: 16px;
         font-style: normal;
@@ -22,15 +22,16 @@
 
     &__line {
         width: 536px;
-        height: 0px;
+        height: 1px;
         margin: 0 auto;
+        background: $light-text-color;
     }
 
     &__input {
         width: 115px;
         padding: 10px;
         border-radius: 20px 0 0 20px;
-        background: $input-color;
+        background: $light-input-color;
         border: none;
 
         &::-webkit-inner-spin-button,
@@ -40,14 +41,14 @@
         }
 
         &::placeholder {
-            color: $placeholder-color;
+            color: $light-placeholder-color;
             font-size: 12px;
             font-weight: 400;
         }
     }
 
     &__text {
-        color: $green-color;
+        color: $light-green-color;
         text-align: right;
         font-size: 12px;
         font-weight: 400;
@@ -56,8 +57,7 @@
     &__button {
         padding: 10px;
         border-radius: 0px 20px 20px 0px;
-        background: #000;
-
+        background: $bg-black-color;
     }
 
     &__svg {
@@ -68,5 +68,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+body.dark .number {
+    &__title {
+        color: $dark-text-color;
+    }
+
+    &__line {
+        background: $dark-text-color;
+    }
+
+    &__input {
+        background: $dark-input-color;
+
+        &::placeholder {
+            color: $dark-placeholder-color;
+        }
+    }
+
+    &__text {
+        color: $dark-green-color;
     }
 }

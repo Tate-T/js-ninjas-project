@@ -2,8 +2,9 @@
     padding-top: 36px;
     padding-bottom: 36px;
 
+
     &__title {
-        color: #000;
+        color: $light-text-color;
         font-family: "Montserrat Alternates";
         font-size: 24px;
         font-style: normal;
@@ -15,7 +16,20 @@
 
     &__line {
         width: 536px;
-        height: 0px;
+        height: 1px;
         margin: 0 auto;
+        background-color: $light-text-color;
+    }
+}
+
+body.dark .hero {
+
+
+    &__title {
+        color: $dark-text-color;
+    }
+
+    &__line {
+        background-color: $dark-text-color;
     }
 }
