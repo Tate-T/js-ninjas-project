@@ -22,6 +22,7 @@
     }
 
     &__line1 {
+        border: $bg-black-color 1px dashed;
         border: $light-text-color 1px dashed;
         height: 0px;
         width: 100px;
