@@ -12,10 +12,10 @@ let ballY = (field.scrollHeight - ballHeight) / 2 + ballHeight / 2;
 ball.style.left = `${ballX}px`;
 ball.style.top = `${ballY}px`;
 
-const gatesX = field.scrollWidth - gates.scrollWidth - 30;
-const gatesY = (field.scrollHeight - gates.scrollHeight) / 2;
 const gatesWidth = gates.scrollWidth;
 const gatesHeight = gates.scrollHeight;
+const gatesX = field.scrollWidth - gatesWidth - 30;
+const gatesY = (field.scrollHeight - gatesHeight) / 2;
 
 gates.style.left = `${gatesX}px`;
 gates.style.top = `${gatesY}px`;
