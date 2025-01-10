@@ -2,7 +2,7 @@
     padding-bottom: 36px;
 
     &__title {
-        color: $text-color;
+        color: $light-text-color;
         font-family: "Montserrat Alternates";
         font-size: 16px;
         font-style: normal;
@@ -32,7 +32,7 @@
     }
 
     &__result {
-        color: $green-color;
+        color: $light-green-color;
         font-size: 12px;
         font-weight: 400;
         text-align: center;
@@ -47,7 +47,7 @@
         font-weight: 400;
         line-height: normal;
         border-radius: 20px;
-        background: $text-color;
+        background: $bg-black-color;
         padding: 10px 20px;
         gap: 10px;
         margin: 0 auto;
@@ -57,9 +57,23 @@
 
     &__line {
         width: 536px;
-        height: 0px;
+        height: 1px;
         stroke-width: 1px;
-        stroke: $text-color;
+        stroke: $light-text-color;
         margin: 0 auto;
+    }
+}
+
+body.dark .rsp {
+    &__title {
+        color: $dark-text-color;
+    }
+
+    &__result {
+        color: $dark-green-color;
+    }
+
+    &__line {
+        stroke: $dark-text-color;
     }
 }

@@ -24,7 +24,6 @@ buttonElements.addEventListener("click", (events) => {
         textElements.textContent = `${days} дн. ${hours}:${min}`;
     }
 
-
     inputElements.value = "";
 
 });

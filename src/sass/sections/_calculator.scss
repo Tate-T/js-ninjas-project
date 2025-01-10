@@ -2,7 +2,7 @@
     padding-bottom: 36px;
 
     &__title {
-        color: #000;
+        color: $light-text-color;
         font-family: "Montserrat Alternates";
         font-size: 16px;
         font-style: normal;
@@ -16,7 +16,7 @@
         width: 536px;
         height: 0px;
         stroke-width: 1px;
-        stroke: #000;
+        stroke: $light-text-color;
         margin: 0 auto;
         margin-top: 58px;
     }
@@ -33,7 +33,7 @@
         padding: 10px 20px;
         border-radius: 20px;
         background: $light-input-color;
-        box-shadow: $dark-shadow;
+        box-shadow: $light-shadow;
         border: none;
         color: $light-text-color;
         font-size: 12px;
@@ -74,11 +74,36 @@
     }
 
     &__result {
-        color: $placeholder-color;
+        color: $light-placeholder-color;
         font-size: 12px;
         font-weight: 400;
         border-radius: 20px;
-        background: $input-color;
+        background: $light-input-color;
         padding: 10px 20px;
+    }
+}
+
+body.dark .calculator {
+    &__title {
+        color: $dark-text-color;
+    }
+
+    &__line {
+        stroke: $dark-text-color;
+    }
+
+    &__input {
+        background: $dark-input-color;
+        box-shadow: $dark-shadow;
+        color: $dark-text-color;
+
+        &::placeholder {
+            color: $dark-placeholder-color;
+        }
+    }
+
+    &__result {
+        color: $dark-placeholder-color;
+        background: $dark-input-color;
     }
 }
