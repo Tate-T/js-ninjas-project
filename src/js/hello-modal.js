@@ -6,7 +6,6 @@ const form = document.querySelector('#hello-form');
 const userInput = document.querySelector('#hello-input');
 const userOutput = document.querySelector('#user-name-output');
 
-submitBtn.addEventListener('click', toggleModal);
 closeBtn.addEventListener('click', toggleModal);
 backdrop.addEventListener('click', toggleModal);
 
@@ -21,4 +20,6 @@ function toggleModal(e) {
 form.addEventListener('submit', e => {
   e.preventDefault();
   userOutput.textContent = userInput.value;
+  page.classList.toggle('no-scroll');
+  backdrop.classList.toggle('is-hidden');
 });
