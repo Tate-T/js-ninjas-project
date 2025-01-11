@@ -10,6 +10,10 @@ buttonElements.addEventListener("click", (events) => {
     let hours = Math.floor((Number(inputElements.value) - days * 1440) / 60);
     let min = Number(inputElements.value) - days * 1440 - hours * 60
     
+    hours = String(hours).padStart(2, '0');
+    min = String(min).padStart(2, '0');
+
+
     if (hours < 12) {
         hours = `${hours}`;
     }
@@ -19,7 +23,7 @@ buttonElements.addEventListener("click", (events) => {
     if (days <= 0) {
         textElements.textContent = `${hours}:${min}`;
     } else {
-        textElements.textContent = `${days} дн. ${hours}:${min}`;
+        textElements.textContent = `${days}дн. ${hours}:${min}    `;
     }
     inputElements.value = "";
-});
+}); 
