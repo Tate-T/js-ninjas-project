@@ -1,4 +1,6 @@
 const textElements = document.querySelector("#text");
+const inputElements = document.querySelector("#input");
+const buttonElements = document.querySelector("#button");
 
 buttonElements.addEventListener("click", (events) => {
     events.preventDefault();
