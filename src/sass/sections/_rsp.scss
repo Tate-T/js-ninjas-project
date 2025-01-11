@@ -58,9 +58,14 @@
     &__line {
         width: 536px;
         height: 1px;
-        stroke-width: 1px;
-        stroke: $light-text-color;
+        background-color: $light-text-color;
         margin: 0 auto;
+    }
+
+    &__cont {
+        display: flex;
+        justify-content: center;
+        gap: 114px;
     }
 }
 
