@@ -75,6 +75,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    &__text.error {
+        color: $light-red-color;
+    }
 }
 
 body.dark .year {
@@ -96,5 +100,9 @@ body.dark .year {
 
     &__text {
         color: $dark-green-color;
+    }
+
+    &__text.error {
+        color: $dark-red-color;
     }
 }

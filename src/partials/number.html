@@ -1,17 +1,17 @@
 <section id="2" class="number">
     <h2 class="number__title">Вгадай число, яке загадав комп’ютер</h2>
-    <form class="number__form">
+    <form id="formNumber" class="number__form">
         <div class="number__box">
-            <label class="number__label">
-                <input class="number__input" type="number" placeholder="Введіть число">
+            <label  class="number__label">
+                <input required id="guessNumber" class="number__input" type="number" placeholder="Введіть число">
             </label>
-            <button class="number__button">
+            <button id="btn" class="number__button">
                 <svg class="number__svg" width="15" height="15">
                     <use href="../svg/icons.svg#icon-search"></use>
                 </svg>
             </button>
         </div>
-        <p class="number__text">Ви народилися у високосний рік!</p>
+        <p id="res" class="number__text">Вітаю, ви вгадали число!</p>
     </form>
     <div class="number__line"></div>
 </section>
