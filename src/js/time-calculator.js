@@ -20,10 +20,13 @@ buttonElements.addEventListener("click", (events) => {
     if (min < 60) {
         min = `${min}`;
     }
+
+
     if (days <= 0) {
         textElements.textContent = `${hours}:${min}`;
     } else {
         textElements.textContent = `${days}дн. ${hours}:${min}    `;
     }
+    
     inputElements.value = "";
 }); 
