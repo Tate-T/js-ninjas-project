@@ -23,7 +23,6 @@
 
     &__line1 {
         border: $bg-black-color 1px dashed;
-        border: $light-text-color 1px dashed;
         height: 0px;
         width: 100px;
         margin-top: 18px;
@@ -33,13 +32,13 @@
     &__input {
         border-radius: 20px;
         background: $light-input-color;
-        display: inline-flex;
+        display: flex;
         padding: 10px 43px 10px 10px;
         align-items: flex-start;
         gap: 10px;
         position: relative;
         border: none;
-        width: 150px;
+        max-width: 150px;
         color: $light-text-color;
         font-size: 12px;
         font-weight: 400;
