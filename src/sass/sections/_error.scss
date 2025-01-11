@@ -1,0 +1,70 @@
+.error {
+    width: 100%;
+    max-width: 463px;
+    min-height: 245px;
+    padding-top: 83px;
+    background-color: $light-body-bg-color;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        line-height: 0;
+    }
+
+    &__dagger {
+        stroke: $light-text-color;
+    }
+
+    &__title {
+        color: $light-text-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+
+        &--sword {
+            left: 43px;
+            bottom: 146px;
+        }
+
+        &--puzzel {
+            left: 87px;
+            bottom: 70px;
+        }
+
+        &--game {
+            right: 87px;
+            bottom: 70px;
+        }
+
+        &--layout {
+            right: 43px;
+            bottom: 146px;
+        }
+    }
+}
+
+body.dark .error {
+    background-color: $dark-body-bg-color;
+
+    &__dagger {
+        stroke: $dark-text-color;
+    }
+
+    &__title {
+        color: $dark-text-color;
+    }
+}

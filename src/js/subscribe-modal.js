@@ -1,6 +1,8 @@
 const page = document.querySelector('body');
-const backdrop = document.querySelector(`[data-subscribe="backdrop"]`);
-const closeBtn = document.querySelector(`[data-subscribe="close"]`);
+const subscribeBackdrop = document.querySelector(`[data-subscribe="backdrop"]`);
+const subscribeCloseBtn = document.querySelector(`[data-subscribe="close"]`);
+const errorBackdrop = document.querySelector(`[data-error="backdrop"]`);
+const errorCloseBtn = document.querySelector(`[data-error="close"]`);
 const form = document.querySelector('#subscribe-form');
 const emails = [];
 
@@ -10,23 +12,37 @@ form.addEventListener('submit', e => {
     e.currentTarget.querySelector('input').value
   );
   if (isIncludingEmail) {
-    alert("На данну пошту вже оформленна підписка. Будь ласка, введіть іншу.");
+    e.currentTarget.querySelector('input').value = '';
+    page.classList.toggle('no-scroll');
+    errorBackdrop.classList.toggle('is-hidden');
   } else {
     e.currentTarget.querySelector('input').value = '';
     page.classList.toggle('no-scroll');
-    backdrop.classList.toggle('is-hidden');
+    subscribeBackdrop.classList.toggle('is-hidden');
   }
 });
-closeBtn.addEventListener('click', toggleModal);
-backdrop.addEventListener('click', toggleModal);
 
-function toggleModal(e) {
+errorCloseBtn.addEventListener('click', errorToggleModal);
+errorBackdrop.addEventListener('click', errorToggleModal);
+subscribeCloseBtn.addEventListener('click', subscribeToggleModal);
+subscribeBackdrop.addEventListener('click', subscribeToggleModal);
+
+function subscribeToggleModal(e) {
   e.preventDefault();
-  if (e.currentTarget === backdrop && e.currentTarget !== e.target) {
+  if (e.currentTarget === subscribeBackdrop && e.currentTarget !== e.target) {
     return;
   }
   page.classList.toggle('no-scroll');
-  backdrop.classList.toggle('is-hidden');
+  subscribeBackdrop.classList.toggle('is-hidden');
+}
+
+function errorToggleModal(e) {
+  e.preventDefault();
+  if (e.currentTarget === errorBackdrop && e.currentTarget !== e.target) {
+    return;
+  }
+  page.classList.toggle('no-scroll');
+  errorBackdrop.classList.toggle('is-hidden');
 }
 
 function addEmail(email) {
