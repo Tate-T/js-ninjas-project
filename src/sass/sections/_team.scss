@@ -9,6 +9,7 @@
     text-align: center;
   }
 
+
   &__name {
     color: $light-text-color;
     font-size: 14px;
@@ -59,20 +60,26 @@
     margin: 0 auto;
   }
 
-  &__checked {
-    width: 100%;
-    max-width: 30px;
-    height: 4px;
-    background-color: $light-choose-slide;
-    border-radius: 10px 10px 10px 10px;
-  }
+
+
 
   &__line1 {
+    display: block;
     width: 100%;
     max-width: 18px;
     height: 3px;
-    background-color: $light-bg-gray-color;
     border-radius: 10px 10px 10px 10px;
+    background-color: $light-bg-gray-color;
+    position: relative;
+    cursor: pointer;
+  
+  }
+
+  &__line1.active {
+    background-color: $light-choose-slide;
+    width: 100%;
+      max-width: 30px;
+      height: 4px;
   }
 
   &__box1 {
@@ -97,58 +104,58 @@
 
 body.dark .team {
   &__title {
-      color: $dark-text-color;
+    color: $dark-text-color;
 
-    }
-  
-    &__name {
-      color: $dark-text-color;
+  }
 
-  
-    }
-  
-    &__work {
-      color: $dark-text-color;
+  &__name {
+    color: $dark-text-color;
 
-    }
-  
-    &__img {
 
-      background: $dark-bg-gray-color;
-    }
-  
+  }
 
-  
-  
+  &__work {
+    color: $dark-text-color;
 
-  
-    &__line {
+  }
 
-      background-color: $dark-text-color;
+  &__img {
 
-    }
-  
-    &__checked {
+    background: $dark-bg-gray-color;
+  }
 
-      background-color: $dark-choose-slide;
 
-    }
-  
-    &__line1 {
 
-      background-color: $dark-bg-gray-color;
 
-    }
-  
 
-  
-    &__svg-right {
-      stroke: $dark-text-color;
 
-    }
-  
-    &__svg-left {
-      stroke: $dark-text-color;
+  &__line {
 
-    }
+    background-color: $dark-text-color;
+
+  }
+
+  &__checked {
+
+    background-color: $dark-choose-slide;
+
+  }
+
+  &__line1 {
+
+    background-color: $dark-bg-gray-color;
+
+  }
+
+
+
+  &__svg-right {
+    stroke: $dark-text-color;
+
+  }
+
+  &__svg-left {
+    stroke: $dark-text-color;
+
+  }
 }
