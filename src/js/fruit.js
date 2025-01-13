@@ -10,9 +10,15 @@ const gameOver = document.querySelector(`[data-fruit="over"]`);
 const win = document.querySelector(`[data-fruit="win"]`);
 let score = 0;
 
-redApple.style.top = `${-redApple.scrollHeight}px`;
-goldApple.style.top = `${-redApple.scrollHeight}px`;
-greenApple.style.top = `${-redApple.scrollHeight}px`;
+redApple.style.top = `-${redApple.scrollHeight}px`;
+goldApple.style.top = `-${goldApple.scrollHeight}px`;
+greenApple.style.top = `-${greenApple.scrollHeight}px`;
+redApple.style.display = `none`;
+goldApple.style.display = `none`;
+greenApple.style.display = `none`;
+
+// const fruitHeight = redApple.scrollHeight;
+// console.log(fruitHeight)
 
 const blockWidth = block.scrollWidth;
 const blockHeight = block.scrollHeight;
@@ -30,7 +36,6 @@ button.addEventListener('click', () => {
   isPlaying = true;
   const intervalId = setInterval(() => {
     if (score >= 0 && score < 10) {
-      console.log('dddd');
       const randomNum = Math.round(Math.random() * (3 - 1) + 1);
       switch (randomNum) {
         case 1:
@@ -69,9 +74,11 @@ window.addEventListener('keydown', e => {
 });
 
 function manageFruit(fruit) {
+  //   debugger;
   let fruitY = Number.parseInt(fruit.style.top);
   const fruitX = Math.random() * (blockWidth - 100 - 100) + 100;
   fruit.style.left = `${fruitX}px`;
+  fruit.style.display = 'block';
   const intervalId = setInterval(() => {
     if (fruitY < blockHeight) {
       fruitY += 4;
@@ -84,14 +91,15 @@ function manageFruit(fruit) {
       ) {
         score += 1;
         scoreText.textContent = score;
-        fruitY = -fruit.scrollHeight;
-        fruit.style.top = `${fruitY}px`;
+        fruitY = fruit.scrollHeight;
+        fruit.style.top = `-${fruitY}px`;
+        fruit.style.display = 'none';
         clearInterval(intervalId);
       }
     } else {
-      console.log(fruit);
-      fruitY = -fruit.scrollHeight;
-      fruit.style.top = `${fruitY}px`;
+      fruitY = fruit.scrollHeight;
+      fruit.style.top = `-${fruitY}px`;
+      fruit.style.display = 'none';
       score -= 1;
       scoreText.textContent = score;
       clearInterval(intervalId);

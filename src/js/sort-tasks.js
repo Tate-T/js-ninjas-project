@@ -49,6 +49,11 @@ const games = [
     name: 'Вчений',
     category: 'acquaintance',
   },
+  {
+    id: 11,
+  name: 'Фрукти',
+    category: 'game',
+  },
 ];
 let copiedGames = [...games];
 
