@@ -102,6 +102,14 @@
         line-height: normal;
         text-align: left;
     }
+
+    &__line {
+        width: 100%;
+        max-width: 536px;
+        height: 1px;
+        background-color: $light-text-color;
+        margin: 36px auto 0;
+    }
 }
 
 body.dark .scientist {
@@ -128,5 +136,9 @@ body.dark .scientist {
 
     &__btn {
         box-shadow: $dark-shadow;
+    }
+
+    &__line {
+        background-color: $dark-text-color;
     }
 }

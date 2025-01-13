@@ -1,0 +1,94 @@
+.fruit {
+    padding-bottom: 36px;
+
+    &__title {
+        color: $light-text-color;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    &__block {
+        width: 612px;
+        height: 345px;
+        background-repeat: no-repeat;
+        background-image: url(../../img/1x/fruit/garden@1x.webp);
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    &__backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $light-backdrop;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__play {
+        border-radius: 20px;
+        background-color: $bg-black-color;
+        box-shadow: $light-shadow;
+        padding: 10px 20px;
+        color: $btn-svg-color;
+        text-align: right;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+    }
+
+    &__apple {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__basket {
+        width: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    &__line {
+        width: 100%;
+        max-width: 536px;
+        height: 1px;
+        background-color: $light-text-color;
+        margin: 36px auto 0;
+    }
+
+    &__score {
+        color: $light-text-color;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 36px;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+    }
+}
+
+body.dark .fruit {
+    &__title {
+        color: $dark-text-color;
+    }
+
+    &__line {
+        background-color: $dark-text-color;
+    }
+}
