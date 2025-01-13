@@ -11,4 +11,5 @@ import './js/football.js';
 import './js/choose-big-number.js';
 import './js/team-slider.js';
 import './js/scientist-filter.js';
+import './js/fruit.js';
 import './js/subscribe-modal.js';
