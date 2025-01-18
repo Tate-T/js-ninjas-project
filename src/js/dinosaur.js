@@ -22,7 +22,6 @@ function jump() {
     }, 500); // 
 }
 
-// Увеличение счета
 const scoreInterval = setInterval(() => {
     if (!gameOver) {
         score++;
@@ -36,7 +35,7 @@ document.addEventListener('mousedown', (event) => {
     }
 });
 
-// Проверка столкновения каждые 10 мс
+
 setInterval(() => {
     const cactusPosition = cactus.getBoundingClientRect().left;
     const dinoPosition = dino.getBoundingClientRect().left;
