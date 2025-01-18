@@ -1,34 +1,69 @@
-function calculate(operation) {
-    const firstNumber = parseFloat(document.getElementById('firstNum').value);
-    const secondNumber = parseFloat(document.getElementById('secondNum').value);
-    let result;
+document.addEventListener('DOMContentLoaded', function () {
+    const firstNumInput = document.getElementById('firstNum');
+    const secondNumInput = document.getElementById('secondNum');
+    const resultElement = document.getElementById('result1');
 
-    if (isNaN(firstNumber) || isNaN(secondNumber)) {
-        result = 'Будь ласка, введіть коректні числа';
-    } else {
+    const addButton = document.getElementById('add');
+    const subtractButton = document.getElementById('subtract');
+    const multiplyButton = document.getElementById('multiply');
+    const divideButton = document.getElementById('divide');
+    const equalsButton = document.getElementById('equals');
+
+    let operation = null;
+
+    addButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        operation = 'add';
+    });
+
+    subtractButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        operation = 'subtract';
+    });
+
+    multiplyButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        operation = 'multiply';
+    });
+
+    divideButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        operation = 'divide';
+    });
+
+    equalsButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        const firstNum = parseFloat(firstNumInput.value);
+        const secondNum = parseFloat(secondNumInput.value);
+        let result;
+
+        if (isNaN(firstNum) || isNaN(secondNum)) {
+            resultElement.textContent = 'Будь ласка, введіть дійсні числа';
+            return;
+        }
+
         switch (operation) {
-            case '+':
-                result = firstNumber + secondNumber;
+            case 'add':
+                result = firstNum + secondNum;
                 break;
-            case '-':
-                result = firstNumber - secondNumber;
+            case 'subtract':
+                result = firstNum - secondNum;
                 break;
-            case '*':
-                result = firstNumber * secondNumber;
+            case 'multiply':
+                result = firstNum * secondNum;
                 break;
-            case '/':
-                result = secondNumber !== 0 ? firstNumber / secondNumber : 'Ділити на нуль не можна';
+            case 'divide':
+                if (secondNum === 0) {
+                    resultElement.textContent = 'Не можна ділити на нуль';
+                    return;
+                }
+                result = firstNum / secondNum;
                 break;
             default:
-                result = 'Невідома операція';
+                resultElement.textContent = 'Виберіть операцію';
+                return;
         }
-    }
 
-    document.getElementById('result').textContent = `Результат: ${result}`;
-}
-
-document.getElementById('add').addEventListener('click', () => calculate('+'));
-document.getElementById('subtract').addEventListener('click', () => calculate('-'));
-document.getElementById('multiply').addEventListener('click', () => calculate('*'));
-document.getElementById('divide').addEventListener('click', () => calculate('/'));
-
+        resultElement.textContent = `Результат: ${result}`;
+    });
+});
