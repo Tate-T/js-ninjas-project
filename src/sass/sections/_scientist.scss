@@ -2,11 +2,19 @@
     padding-bottom: 36px;
 
     &__header {
-        width: 536px;
+        width: 100%;
         display: flex;
         align-items: center;
         margin: 0 auto 36px;
         justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: 948px) {
+            flex-direction: row;
+            gap: 0;
+            width: 536px;
+        }
     }
 
     &__title {
@@ -22,9 +30,14 @@
         flex-wrap: wrap;
         max-width: 577px;
         width: 100%;
-        column-gap: 59px;
-        row-gap: 36px;
         margin: 0 auto 36px;
+        column-gap: 30px;
+        row-gap: 20px;
+
+        @media screen and (min-width: 948px) {
+            column-gap: 59px;
+            row-gap: 36px;
+        }
     }
 
     &__item {
@@ -64,7 +77,8 @@
         flex-wrap: wrap;
         column-gap: 36px;
         row-gap: 20px;
-        width: 918px;
+        max-width: 918px;
+        width: 100%;
         justify-content: center;
         margin: 0 auto;
     }
@@ -72,19 +86,31 @@
     &__filters {
         display: flex;
         flex-direction: column;
-        align-items: end;
         gap: 20px;
         width: 441px;
+        align-items: center;
+
+        @media screen and (min-width: 948px) {
+            align-items: end;
+        }
 
         &:last-of-type {
-            align-items: start;
+
+            @media screen and (min-width: 948px) {
+                align-items: start;
+            }
         }
     }
 
     &__filter {
+        width: 100%;
 
-        &:nth-child(4) {
-            max-width: 368px;
+        @media screen and (min-width: 948px) {
+            width: max-content;
+
+            &:nth-child(4) button {
+                max-width: 368px;
+            }
         }
     }
 
@@ -101,6 +127,15 @@
         font-weight: 400;
         line-height: normal;
         text-align: left;
+        width: 100%;
+        max-width: 441px;
+        text-align: center;
+
+        @media screen and (min-width: 948px) {
+            width: max-content;
+            max-width: max-content;
+            text-align: left;
+        }
     }
 
     &__line {

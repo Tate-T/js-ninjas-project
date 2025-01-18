@@ -1,5 +1,5 @@
 .mistake {
-    width: 100%;
+    width: calc(100% - 30px);
     max-width: 463px;
     min-height: 245px;
     padding-top: 83px;
@@ -36,23 +36,41 @@
         height: 30px;
 
         &--sword {
-            left: 43px;
-            bottom: 146px;
+            left: 20px;
+            bottom: 75px;
+
+            @media screen and (min-width: 440px) {
+                left: 43px;
+                bottom: 146px;
+            }
         }
 
         &--puzzel {
             left: 87px;
-            bottom: 70px;
+            bottom: 50px;
+
+            @media screen and (min-width: 440px) {
+                bottom: 70px;
+            }
         }
 
         &--game {
             right: 87px;
-            bottom: 70px;
+            bottom: 50px;
+
+            @media screen and (min-width: 440px) {
+                bottom: 70px;
+            }
         }
 
         &--layout {
-            right: 43px;
-            bottom: 146px;
+            right: 20px;
+            bottom: 75px;
+
+            @media screen and (min-width: 440px) {
+                right: 43px;
+                bottom: 146px;
+            }
         }
     }
 }

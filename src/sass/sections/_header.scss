@@ -1,39 +1,64 @@
 .header {
-    padding: 21px 0;
+    padding: 12px 0;
     background-color: $light-body-bg-color;
+
+    @media screen and (min-width: 800px) {
+        padding: 21px 0;
+    }
 
     & .container {
         display: flex;
         align-items: center;
     }
 
-    &__logo {}
+    &__logo {
+        line-height: 0;
+    }
 
     &__icon {}
 
     &__nav {
-        margin-left: 81px;
+        display: none;
+
+        @media screen and (min-width: 600px) {
+            margin-left: 40px;
+            display: block;
+        }
+
+        @media screen and (min-width: 800px) {
+            margin-left: 81px;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 20px;
+
+        @media screen and (min-width: 800px) {
+            gap: 50px;
+        }
     }
 
     &__item {
         position: relative;
+        display: flex;
+        align-items: center;
     }
 
     &__select {
+        font-size: 10px;
         border: none;
         padding: 0;
         color: $light-text-color;
-        font-size: 12px;
         font-weight: 400;
         display: flex;
         gap: 6px;
         align-items: end;
+
+        @media screen and (min-width: 800px) {
+            font-size: 12px;
+        }
     }
 
     &__select.checked &__arrow {
@@ -49,17 +74,22 @@
 
     &__sublist {
         position: absolute;
-        top: 48px;
         border: 1px solid $light-text-color;
         border-top: none;
         background: $light-body-bg-color;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 160px;
+        width: 120px;
         display: flex;
         flex-direction: column;
         border-radius: 0px 0px 20px 20px;
         overflow: hidden;
+        top: 38px;
+
+        @media screen and (min-width: 800px) {
+            top: 48px;
+            width: 160px;
+        }
 
         &.is-hidden {
             opacity: 0;
@@ -70,12 +100,17 @@
     &__subitem {}
 
     &__subbtn {
-        padding: 10px 0;
+        padding: 6px 0;
         color: $light-text-color;
-        font-size: 12px;
         font-weight: 400;
         background-color: $light-body-bg-color;
         width: 100%;
+        font-size: 9px;
+
+        @media screen and (min-width: 800px) {
+            font-size: 12px;
+            padding: 10px 0;
+        }
 
         &:hover {
             background-color: $light-interactiv;
@@ -84,30 +119,47 @@
 
     &__link {
         color: $light-text-color;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
+
+        @media screen and (min-width: 800px) {
+            font-size: 12px;
+        }
     }
 
     &__btn {
         margin-left: auto;
         background-color: $bg-toogle-btn;
-        width: 40px;
+        width: 30px;
         border-radius: 11px;
+
+        @media screen and (min-width: 800px) {
+            width: 40px;
+        }
     }
 
     &__wrapper {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         background-color: $light-body-bg-color;
         border: 0.5px solid $light-text-color;
         border-radius: 50%;
         margin-left: 0;
         padding: 1px;
 
+        @media screen and (min-width: 800px) {
+            width: 20px;
+            height: 20px;
+        }
+
         body.dark & {
             background-color: $bg-black-color;
-            margin-left: 20px;
+            margin-left: 15px;
             transform: rotate(720deg);
+
+            @media screen and (min-width: 800px) {
+                margin-left: 20px;
+            }
         }
     }
 
@@ -116,9 +168,14 @@
 
     &__text {
         color: $light-text-color;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
-        margin-left: 51px;
+        margin-left: 20px;
+
+        @media screen and (min-width: 800px) {
+            font-size: 12px;
+            margin-left: 51px;
+        }
     }
 
     &__name {}

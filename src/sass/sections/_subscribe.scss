@@ -1,14 +1,14 @@
 .subscribe {
-    width: 100%;
+    width: calc(100% - 30px);
     max-width: 463px;
     min-height: 245px;
-    padding-top: 83px;
     background-color: $light-body-bg-color;
     border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-top: 83px;
 
     &__close {
         position: absolute;
@@ -34,8 +34,13 @@
         height: 30px;
 
         &--sword {
-            left: 43px;
-            bottom: 146px;
+            left: 20px;
+            bottom: 90px;
+
+            @media screen and (min-width: 440px) {
+                left: 43px;
+                bottom: 146px;
+            }
         }
 
         &--puzzel {
@@ -49,8 +54,13 @@
         }
 
         &--layout {
-            right: 43px;
-            bottom: 146px;
+            right: 20px;
+            bottom: 90px;
+
+            @media screen and (min-width: 440px) {
+                right: 43px;
+                bottom: 146px;
+            }
         }
     }
 }
