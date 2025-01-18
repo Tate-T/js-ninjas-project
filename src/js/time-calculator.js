@@ -5,7 +5,6 @@ const buttonElements = document.querySelector("#button");
 buttonElements.addEventListener("click", (events) => {
     events.preventDefault();
 
-
     let days = Math.floor(Number(inputElements.value) / 1440);
     let hours = Math.floor((Number(inputElements.value) - days * 1440) / 60);
     let min = Number(inputElements.value) - days * 1440 - hours * 60

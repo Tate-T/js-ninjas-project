@@ -72,14 +72,14 @@
     background-color: $light-bg-gray-color;
     position: relative;
     cursor: pointer;
-  
+
   }
 
   &__line1.active {
     background-color: $light-choose-slide;
     width: 100%;
-      max-width: 30px;
-      height: 4px;
+    max-width: 30px;
+    height: 4px;
   }
 
   &__box1 {
@@ -99,8 +99,18 @@
     fill: none;
   }
 
+  @media screen and (min-width: 320px) {
+    .team__slider {
+      max-width: 100%;
+    }
+  }
+
+
+
 
 }
+
+
 
 body.dark .team {
   &__title {
