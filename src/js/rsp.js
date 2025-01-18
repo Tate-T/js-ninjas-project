@@ -1,8 +1,8 @@
 let userScore = 0;
 let computerScore = 0;
 const maxScore = 3;
-const resultOfText = document.querySelector("#round");
-console.log(resultOfText);
+// const resultOfText = document.querySelector("#round");
+// console.log(resultOfText);
 
 function playGame(userChoice) {
   const choices = ["rock", "paper", "scissors"];

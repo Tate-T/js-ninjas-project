@@ -71,9 +71,13 @@
     }
 
     &__cont {
-        display: flex;
+        display: block;
         justify-content: center;
         gap: 114px;
+
+        @media screen and (min-width: 650px) {
+            display: flex;
+        }
     }
 }
 
