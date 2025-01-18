@@ -3,7 +3,7 @@
   <div class="rsp__cont">
     <ul class="rsp__list">
       <li class="rsp__item">
-        <button class="rsp__button">
+        <button  id="rock" class="rsp__button">
           <picture>
             <source srcset="
               ./img/1x/rps/stone@1x.webp 1x,
@@ -14,7 +14,7 @@
         </button>
       </li>
       <li class="rsp__item">
-        <button class="rsp__button">
+        <button  id="scissors" class="rsp__button">
           <picture>
             <source srcset="
               ./img/1x/rps/scissors@1x.webp 1x,
@@ -25,7 +25,7 @@
         </button>
       </li>
       <li class="rsp__item">
-        <button class="rsp__button">
+        <button id="paper" class="rsp__button">
           <picture>
             <source srcset="
               ./img/1x/rps/paper@1x.webp 1x,
@@ -37,13 +37,13 @@
       </li>
     </ul>
     <div class="rsp__box">
-      <p class="rsp__text">Рахунок:</p>
-      <p class="rsp__text">Комп’ютер - 0</p>
-      <p class="rsp__text">Ви - 0</p>
+      <p id="result" class="rsp__text">Рахунок:</p>
+      <p id="computer" class="rsp__text">Комп’ютер - 0</p>
+      <p id="you" class="rsp__text">Ви - 0</p>
     </div>
   </div>
 
-  <p class="rsp__result">Ви виграли раунд!</p>
+  <p id="round" class="rsp__result">Ви виграли раунд!</p>
   <p class="rsp__btn">Варіант комп’ютера</p>
   <div class="rsp__line"></div>
 </section>
