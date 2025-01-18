@@ -4,10 +4,13 @@ const title = document.querySelector('.dinosaur__title');
 const restartButton = document.querySelector('#restartButton');
 const endButton = document.querySelector('#endButton');
 const instruction = document.querySelector('#instruction');
+const startButton = document.querySelector("#startButton")
 
 let isJumping = false;
 let score = 0;
 let gameOver = false;
+let gameStart = false;
+
 
 
 function jump() {
@@ -54,6 +57,7 @@ restartButton.addEventListener('click', restartGame);
 endButton.addEventListener('click', endGame);
 
 
+
 function restartGame() {
     isJumping = false;
     score = 0;
@@ -62,7 +66,7 @@ function restartGame() {
     cactus.style.right = '-40px'; 
     title.textContent = 'Google динозавр'; 
     instruction.style.display = 'block'; 
-    restartButton.style.display = 'none'; 
+    restartButton.style.display = 'block'; 
 
 
 

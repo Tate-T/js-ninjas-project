@@ -61,6 +61,19 @@
         background-color: $light-text-color;
         margin: 0 auto;
     }
+
+    @media screen and (min-width: 320px) {
+        .bignum {
+            &__form {
+                max-width: 100%;
+                flex-direction: column;
+            }
+
+            &__input{
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 
