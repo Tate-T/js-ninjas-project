@@ -1,9 +1,9 @@
-const dino = document.getElementById('dino');
-const cactus = document.getElementById('cactus');
+const dino = document.querySelector('#dino');
+const cactus = document.querySelector('#cactus');
 const title = document.querySelector('.dinosaur__title');
-const restartButton = document.getElementById('restartButton');
-const endButton = document.getElementById('endButton');
-const instruction = document.getElementById('instruction');
+const restartButton = document.querySelector('#restartButton');
+const endButton = document.querySelector('#endButton');
+const instruction = document.querySelector('#instruction');
 
 let isJumping = false;
 let score = 0;
@@ -47,13 +47,13 @@ setInterval(() => {
     }
 }, 10);
 
-// Обработчик события для кнопки перезапуска
+
 restartButton.addEventListener('click', restartGame);
 
-// Обработчик события для кнопки завершения игры
+
 endButton.addEventListener('click', endGame);
 
-// Функция перезапуска игры
+
 function restartGame() {
     isJumping = false;
     score = 0;
@@ -65,7 +65,7 @@ function restartGame() {
     restartButton.style.display = 'none'; 
 
 
-    // Запускаем счет заново
+
     setInterval(() => {
         if (!gameOver) {
             score++;
@@ -73,7 +73,7 @@ function restartGame() {
     }, 1000);
 }
 
-// Функция завершения игры
+
 function endGame() {
     gameOver = true;
     clearInterval(scoreInterval);
