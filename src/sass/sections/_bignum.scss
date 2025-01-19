@@ -62,7 +62,7 @@
         margin: 0 auto;
     }
 
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 460px) {
         .bignum {
             &__form {
                 max-width: 100%;
