@@ -3,10 +3,8 @@
     background-color: $light-body-bg-color;
 
     @media screen and (min-width: 800px) {
-    padding: 60px 0;
+        padding: 60px 0;
     }
-
-
 
     & .container {
         display: flex;
@@ -24,16 +22,10 @@
     &__logo {
         display: block;
         width: max-content;
-        width: 100px;
-        height: 42px;
-
-        @media screen and (min-width: 800px) {
-            width: 165px;
-            height: 70px;
-        }
     }
 
-    &__icon {}
+    &__icon {
+    }
 
     &__list {
         display: flex;
