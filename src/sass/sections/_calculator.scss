@@ -21,21 +21,32 @@
     }
 
     &__line {
-        width: 536px;
+        width: 100%;
         height: 1px;
         background-color: $light-text-color;
         margin: 0 auto;
         margin-top: 58px;
+
+        @media screen and (min-width: 768px) {
+            width: 536px;
+        }
     }
 
     &__form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 38px;
+        display: block;
+        width: 100%;
+
+        @media screen and (min-width: 730px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 38px;
+        }
     }
 
     &__input {
+        display: block;
+        margin: 0 auto 12px;
         width: 135px;
         padding: 10px 20px;
         border-radius: 20px;
@@ -45,6 +56,10 @@
         color: $light-text-color;
         font-size: 12px;
         font-style: normal;
+
+        @media screen and (min-width: 730px) {
+            margin: 0;
+        }
 
         &::-webkit-inner-spin-button,
         &::-webkit-outer-spin-button {
@@ -64,10 +79,16 @@
         flex-wrap: wrap;
         width: 60px;
         gap: 10px;
+        margin: 0 auto 12px;
+
+        @media screen and (min-width: 730px) {
+            margin: 0;
+        }
     }
 
     &__button {
         color: $btn-svg-color;
+        margin: 0 auto;
         font-size: 12px;
         font-weight: 400;
         width: 25px;
@@ -78,6 +99,10 @@
         border-radius: 20px;
         background: $bg-black-color;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+        @media screen and (min-width: 730px) {
+            margin: 0;
+        }
     }
 
     &__result {
@@ -87,7 +112,10 @@
         border-radius: 20px;
         background: $light-input-color;
         padding: 10px 20px;
+        margin-top: 12px;
     }
+
+
 }
 
 body.dark .calculator {
