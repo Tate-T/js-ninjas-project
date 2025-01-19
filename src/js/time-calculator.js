@@ -1,14 +1,16 @@
 const textElements = document.querySelector("#text");
 const inputElements = document.querySelector("#input");
 const buttonElements = document.querySelector("#button");
+const formElements = document.querySelector(".time__form")
 
-buttonElements.addEventListener("click", (events) => {
-    events.preventDefault();
+
+formElements.addEventListener("submit", (event) => {
+    event.preventDefault()
 
     let days = Math.floor(Number(inputElements.value) / 1440);
     let hours = Math.floor((Number(inputElements.value) - days * 1440) / 60);
     let min = Number(inputElements.value) - days * 1440 - hours * 60
-    
+
     hours = String(hours).padStart(2, '0');
     min = String(min).padStart(2, '0');
 
@@ -26,6 +28,7 @@ buttonElements.addEventListener("click", (events) => {
     } else {
         textElements.textContent = `${days}дн. ${hours}:${min}    `;
     }
-    
+
     inputElements.value = "";
-}); 
+})
+

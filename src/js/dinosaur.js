@@ -23,6 +23,7 @@ function jump() {
     }, 500);
 }
 
+
 const scoreInterval = setInterval(() => {
     if (!gameOver) {
         score++;
@@ -41,7 +42,7 @@ setInterval(() => {
     const dinoPosition = dino.getBoundingClientRect().left;
 
     if (cactusPosition < dinoPosition + 40 && cactusPosition + 20 > dinoPosition) {
-        endGame();
+        gameStart();
     }
 }, 10);
 
