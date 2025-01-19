@@ -8,7 +8,7 @@ form.addEventListener("submit", (event) => {
     const randomNumber = Math.round(Math.random() * (100 - 0) + 0);
   if (userNumber === randomNumber) {
     resultText.innerHTML = `Вітаю, ви вгадали число! ${randomNumber}`;
-    resultText.classList.add("error");
+    resultText.classList.remove("error");
   } else {
     resultText.innerHTML = `Ви програли, комп’ютер загадав ${randomNumber}`;
     resultText.classList.add("error");
