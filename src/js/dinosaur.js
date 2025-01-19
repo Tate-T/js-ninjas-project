@@ -24,11 +24,8 @@ function jump() {
 }
 
 
-const scoreInterval = setInterval(() => {
-    if (!gameOver) {
-        score++;
-    }
-}, 1000);
+let scoreInterval 
+
 
 document.addEventListener('mousedown', (event) => {
     if (event.button === 0 && gameStart) {
@@ -38,12 +35,15 @@ document.addEventListener('mousedown', (event) => {
 
 setInterval(() => {
     if (!gameStart || gameOver) return; 
-    const cactusPosition = cactus.getBoundingClientRect().left;
-    const dinoPosition = dino.getBoundingClientRect().left;
+    const cactusX = cactus.getBoundingClientRect().left;
+    const dinoX = dino.getBoundingClientRect().left;
+    const cactusY = cactus.getBoundingClientRect().top;
+    const dinoY = dino.getBoundingClientRect().top;
 
-    if (cactusPosition < dinoPosition + 40 && cactusPosition + 20 > dinoPosition) {
-        gameStart();
+    if (cactusX < dinoX + 40 && cactusX + 20 > dinoX && dinoY + 44 > cactusY) {
+        endGame();
     }
+
 }, 10);
 
 restartButton.addEventListener('click', restartGame);
@@ -62,6 +62,11 @@ function restartGame() {
     title.textContent = 'Google динозавр';
     instruction.style.display = 'block';
     restartButton.style.display = 'none'; 
+    scoreInterval = setInterval(() => {
+        if (!gameOver) {
+            score++;
+        }
+    }, 1000);
 }
 
 function endGame() {

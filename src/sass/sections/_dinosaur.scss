@@ -65,6 +65,7 @@
         height: 1px;
         background-color: $light-text-color;
         margin: 0 auto;
+        margin-top: 36px;
 
     }
 
@@ -110,7 +111,6 @@ body.dark .dinosaur {
 
     &__box {
         border: 2px solid $dark-choose-slide;
-        background-color: $dark-bg-gray-color;
 
     }
 
@@ -122,6 +122,19 @@ body.dark .dinosaur {
 
     &__line {
         background-color: $dark-text-color;
+
+    }
+
+    &__bth {
+        color: $dark-text-color;
+    }
+
+    &__text {
+        color: $dark-text-color;
+    }
+
+    &__end {
+        color: $dark-text-color;
 
     }
 }
