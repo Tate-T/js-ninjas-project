@@ -6,13 +6,22 @@ const endButton = document.querySelector('#endButton');
 const instruction = document.querySelector('#instruction');
 const startButton = document.querySelector("#startButton");
 
+
+const GameStateInitial = 'game_state_initial';
+const GameStatePlaying = 'game_state_playing';
+const GameStateOver = 'game_state_over';
+
+
+cactus.style.animation = 'none';
 let isJumping = false;
 let score = 0;
-let gameOver = false;
-let gameStart = false;
+let gameState = GameStateInitial;
+let scoreInterval = undefined;
+
 
 function jump() {
-    if (isJumping || gameOver) return;
+    if (gameState !== GameStatePlaying) return;
+    if (isJumping) return;
     isJumping = true;
 
     dino.classList.add('jump');
@@ -23,18 +32,15 @@ function jump() {
     }, 500);
 }
 
-
-let scoreInterval 
-
-
 document.addEventListener('mousedown', (event) => {
-    if (event.button === 0 && gameStart) {
+    if (event.button === 0) {
         jump();
     }
 });
 
 setInterval(() => {
-    if (!gameStart || gameOver) return; 
+    if (gameState !== GameStatePlaying) return;
+
     const cactusX = cactus.getBoundingClientRect().left;
     const dinoX = dino.getBoundingClientRect().left;
     const cactusY = cactus.getBoundingClientRect().top;
@@ -43,25 +49,22 @@ setInterval(() => {
     if (cactusX < dinoX + 40 && cactusX + 20 > dinoX && dinoY + 44 > cactusY) {
         endGame();
     }
-
 }, 10);
 
 restartButton.addEventListener('click', restartGame);
 endButton.addEventListener('click', endGame);
 
 
-
-
 function restartGame() {
+    gameState = GameStatePlaying;
     isJumping = false;
     score = 0;
-    gameOver = false;
-    gameStart = true; 
     cactus.style.animation = '';
     cactus.style.right = '-40px';
     title.textContent = 'Google динозавр';
     instruction.style.display = 'block';
-    restartButton.style.display = 'none'; 
+    restartButton.style.display = 'none';
+    endButton.style.display = 'block';
     scoreInterval = setInterval(() => {
         if (!gameOver) {
             score++;
@@ -70,11 +73,11 @@ function restartGame() {
 }
 
 function endGame() {
-    gameOver = true;
+    gameState = GameStateOver;
     clearInterval(scoreInterval);
     cactus.style.animation = 'none';
     title.textContent = 'Игра окончена! Ваш счет: ' + score;
     instruction.style.display = 'none';
-    restartButton.style.display = 'block'; 
+    restartButton.style.display = 'block';
     endButton.style.display = 'none';
 }
