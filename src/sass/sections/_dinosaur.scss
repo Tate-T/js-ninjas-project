@@ -52,7 +52,7 @@
         bottom: 15px;
         right: 0;
         width: 34px;
-        height: 34px;
+        height: 39px;
         background-image: url("../../img/1x/dino/cactus@1x.webp");
         background-size: contain;
         background-repeat: no-repeat;
@@ -79,23 +79,19 @@
         }
     }
 
-    &__bth {
-        display: none;
-    }
-
     &__text {
         font-size: 18px;
         margin-top: 10px;
     }
 
     &__end {
-        display: block;
+        display: none;
     }
 }
 
 .jump {
     animation: jump 0.3 liner;
-    bottom: 150px;
+    bottom: 100px;
 }
 
 
@@ -135,6 +131,5 @@ body.dark .dinosaur {
 
     &__end {
         color: $dark-text-color;
-
     }
 }
