@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/js-ninjas-project/assets/index-80e57df4.js"></script>
-    <link rel="stylesheet" href="/js-ninjas-project/assets/index-8429ad00.css">
+    <script type="module" crossorigin src="/js-ninjas-project/assets/index-3947633b.js"></script>
+    <link rel="stylesheet" href="/js-ninjas-project/assets/index-ab992b00.css">
   </head>
   <body class="no-scroll">
     <header class="header">
@@ -122,10 +122,10 @@
           </ul>
         </li>
         <li class="header__item">
-          <a href="" class="header__link">Наша команда</a>
+          <a href="#9" class="header__link">Наша команда</a>
         </li>
         <li class="header__item">
-          <a href="" class="header__link">Контакти</a>
+          <a href="#contact" class="header__link">Контакти</a>
         </li>
       </ul>
     </nav>
@@ -318,7 +318,15 @@
         <section id="7" class="football">
   <h2 class="football__title">Футбол</h2>
   <div id="football-field" class="football__field">
+    <div data-football="backdrop" class="football__backdrop">
+      <button data-football="play" class="football__play">PLay now</button>
+    </div>
+    <div data-football="end" class="football__backdrop is-hidden">
+      <p class="football__play">Ти забив <span id="football-output"></span> голів</p>
+      <button data-football="restart" class="football__play">Restart</button>
+    </div>
     <p id="football-count" class="football__count">0</p>
+    <p id="football-time" class="football__time">0:30</p>
     <picture>
       <source
         srcset="data:image/webp;base64,UklGRuoEAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSDIBAAABkKNt27FHd5yswLbtZCupbOwglW07aZPaX3rb3oCNeYbf9773cUwfERMAhcm5IysXryIfu8Z0SRT0BzdfisWjbj89mXOidDxendeMKB/1U1R6Kxqvi1Q4tYvmJntLrquifc3DgsepEJ66mnJYE8o1JzNNQtpuokpos//hd8Nz6/23MSGe/UuCUGf9Mc61CMBPyIOBbrZq4JDtEpFCn1LClzfNN2LwrezxXXzwvcl/8ZXv7Zxvx+Az+vnGc/kK4vnCccG2DzSy1QCBbH4A5rjGASCDK/4PzDCN4q9etzzXfn9DGU8h/t3B0gyTLusc6w5m4HbGcOYJ854b+tZdYdWxWVe7ExRWXeu4zYZavzF1s15QnjCuZi4LWv0aD6xcVAdCf0TRhLH7+uPH09lyX04CFAJWUDggkgMAAFATAJ0BKjIAMgA+USCNRSOhoRYJXgA4BQS0gArwD+gdnX9b57zyGe6fhfyZ5Adqn+5b21kr/UaMPxxcd3+z+1X6S/4n/kf33zfflf97/5XuD/yT+jf7H+3/vF3c/2A9jL9SRot+BN9IPS5ZEnqJ4bboe1ocA9J3u1co9bKBc5BlbSzk6XBeFR00D/6GMJsW6Q4qor9LPDWZEBCDaTnTAvBlaAAA/sOaxSJADfuNg7PKTN4HOU2ZhQDBYJJidwuYLwozQzcpq9vBYAHdgFTWDWdXUtixUmg+fRAt/J+Y9hOK1gDfwHqiA1IJPUwM/FFqRHcxBtS51A78Km/EWhID90PpdaaVhcQGJMpF/yn/A+gwQvJ1v/9e+E2Qgbvrq2Dm43Yg+Bz8xADMfsTJjno6YewAfG4/6jLbfPbhzWZ32rg+577ZlJpSN/lytxfioVDsdeyqg/bts2BPtXnErevUtc268XF+EYL2/0/tXLehhs2EpkqW1+M5hjpqar5YKoX/9Lhv/+t3P8unkWUkxNdmzxRciwvNiH4hFzEvFN8bM+fGA1zRH+mULClupm7/zwiQCj5GHva9P/+TVvLGb15vg3fW+q21d/LhTRLOOaertBW0rn33CSdvICVKEmZQZM9T+u9+RYuzFkgeZV65uUTKdyZBJUOiZU9XDspuRW8nhlq2QRCnEj5aIJAna6+N3J4nbMWIDKwH+WpaXCy5XTKAT+XZ1dcC5eqJrg0Y6Oy/9K4tv3XXPdLK3/Zd6ijqLexMYO22NfQr+aNiEGz/tvAf4EAuKDnlLvsg7dGWQhD8aoo9RG2zrfYCT2Am4HFkQpVn2K25sheu7Y1Tv+Gt2PFGFHkhencYzFaD+Nfrn4pS/CutP2ziI5cmlEC1524smNEw7fHg0p648xh29//6QXwpa6ahfBeZjZ3o0V7eOvotMyVDljaqREcZvhDNAbPoPqADzLqa72pwHqUZEw+fqUqPrVcL67YcE9Mr84O8JMyrzfy1r9x2nap3+/9iCa80WvbSflqvKTvd2lT1dgQNh2VMl+EseEf8NMQXRLMbbfslHmDpXrgnSbC44UO2PSo+7Sfl0Dd8o6rnK28eU/D3A5L+GRhIECQErAeRJxZc661dE4WUKaiwAVVawT4eJUCTMvl/AcLv/Ib1cwP+BSjGqSrWzbcInPoq2oVTTgidF0mYguC8UEK6Lh/gOJ/8X0ydHT9yAAAA 1x, data:image/webp;base64,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 2x"
@@ -346,6 +354,7 @@
       />
     </picture>
   </div>
+  <p class="football__info">Почніть гру та забийте як найбільше голів</p>
   <div class="football__line"></div>
 </section>
 
@@ -527,12 +536,13 @@
       />
     </picture>
   </div>
+  <p class="fruit__info">Почніть гру та натискайте ліву та праву стрілки для руху корзини</p>
   <div class="fruit__line"></div>
 </section>
 
       </div>
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
   <div class="container">
     <a id="footer-icon" href="./index.html" class="footer__logo">
       <svg
