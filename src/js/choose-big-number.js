@@ -15,19 +15,19 @@ const maxNumber = function (one, two, three) {
 }
 
 
-firstNumber.addEventListener("change", () => {
+firstNumber.addEventListener("input", () => {
     firstResult = firstNumber.value;
     resultMax.textContent = maxNumber(firstResult, secondResult, thirdResult);
 })
 
 
-secondNumber.addEventListener("change", () => {
+secondNumber.addEventListener("input", () => {
     secondResult = secondNumber.value;
     resultMax.textContent = maxNumber(firstResult, secondResult, thirdResult);
 })
 
 
-thirdNumber.addEventListener("change", () => {
+thirdNumber.addEventListener("input", () => {
     thirdResult = thirdNumber.value;
     resultMax.textContent = maxNumber(firstResult, secondResult, thirdResult);
 })
