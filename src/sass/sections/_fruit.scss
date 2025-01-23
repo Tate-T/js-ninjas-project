@@ -12,7 +12,7 @@
     &__block {
         height: 345px;
         background-repeat: no-repeat;
-        background-image: url(../../img/1x/fruit/garden@1x.webp);
+        background-image: url(../img/1x/fruit/garden@1x.webp);
         background-position: center;
         background-size: cover;
         margin: 0 auto;
@@ -46,13 +46,8 @@
         box-shadow: $light-shadow;
         padding: 10px 20px;
         color: $btn-svg-color;
-        text-align: right;
-        font-family: "Montserrat Alternates";
         font-size: 12px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
-        text-align: left;
     }
 
     &__apple {
@@ -85,6 +80,14 @@
         left: 30px;
         top: 20px;
     }
+
+    &__info {
+        color: $light-text-color;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 24px;
+        text-align: center;
+    }
 }
 
 body.dark .fruit {
@@ -94,5 +97,9 @@ body.dark .fruit {
 
     &__line {
         background-color: $dark-text-color;
+    }
+
+    &__info {
+        color: $dark-text-color;
     }
 }

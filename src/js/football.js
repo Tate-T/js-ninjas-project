@@ -2,7 +2,17 @@ const ball = document.querySelector('#football-ball');
 const gates = document.querySelector('#football-gates');
 const field = document.querySelector('#football-field');
 const countOutput = document.querySelector('#football-count');
+const button = document.querySelector(`[data-football="play"]`);
+const backdrop = document.querySelector(`[data-football="backdrop"]`);
+const gameOver = document.querySelector(`[data-football="end"]`);
+const timeOutput = document.querySelector('#football-time');
+const spanOutput = document.querySelector('#football-output');
+const restartBtn = document.querySelector(`[data-football="restart"]`);
 let countOfGoals = 0;
+let timeScore = 30;
+timeOutput.textContent = `0:${timeScore}`;
+let isPlaying = false;
+let isGoal = false;
 
 const ballWidth = ball.scrollWidth;
 const ballHeight = ball.scrollHeight;
@@ -17,10 +27,42 @@ const gatesHeight = gates.scrollHeight;
 const gatesX = field.scrollWidth - gatesWidth - 30;
 const gatesY = (field.scrollHeight - gatesHeight) / 2;
 
-gates.style.left = `${gatesX}px`;
+gates.style.right = `${30}px`;
 gates.style.top = `${gatesY}px`;
 
+function setTime() {
+  const interval = setInterval(() => {
+    if (timeScore > 0) {
+      timeScore -= 1;
+      timeOutput.textContent = `0:${String(timeScore).padStart(2, '0')}`;
+    } else {
+      isPlaying = false;
+      spanOutput.textContent = `${countOfGoals}`;
+      gameOver.classList.toggle('is-hidden');
+      clearInterval(interval);
+    }
+  }, 1000);
+}
+
+restartBtn.addEventListener('click', () => {
+  isPlaying = true;
+  countOfGoals = 0;
+  timeScore = 30;
+  timeOutput.textContent = `0:${timeScore}`;
+  gameOver.classList.toggle('is-hidden');
+  setTime();
+});
+
+button.addEventListener('click', () => {
+  isPlaying = true;
+  backdrop.classList.add('is-hidden');
+  setTime();
+});
+
 field.addEventListener('click', e => {
+  if (!isPlaying || isGoal) {
+    return;
+  }
   let ballX = e.offsetX;
   let ballY = e.offsetY;
 
@@ -64,6 +106,7 @@ field.addEventListener('click', e => {
     ballY - ballHeight / 2 >= gatesY &&
     ballY + ballHeight / 2 <= gatesY + gatesHeight
   ) {
+    isGoal = true;
     countOfGoals += 1;
     countOutput.textContent = countOfGoals;
     ballX = 60 + ballWidth / 2;
@@ -71,6 +114,9 @@ field.addEventListener('click', e => {
     setTimeout(() => {
       ball.style.left = `${ballX}px`;
       ball.style.top = `${ballY}px`;
+    }, 1000);
+    setTimeout(() => {
+      isGoal = false;
     }, 1000);
   }
 });

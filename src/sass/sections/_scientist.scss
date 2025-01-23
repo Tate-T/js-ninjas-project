@@ -33,10 +33,17 @@
         margin: 0 auto 36px;
         column-gap: 30px;
         row-gap: 20px;
+        height: 700px;
+        align-content: start;
+
+        @media screen and (min-width: 520px) {
+            height: 340px;
+        }
 
         @media screen and (min-width: 948px) {
             column-gap: 59px;
             row-gap: 36px;
+            height: 372px;
         }
     }
 

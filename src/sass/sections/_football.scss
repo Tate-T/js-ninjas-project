@@ -19,6 +19,7 @@
         background-color: #5ABB58;
         position: relative;
         cursor: url(../svg/cursor.svg) 4 4, pointer;
+        overflow: hidden;
 
         @media screen and (min-width: 600px) {
             height: 220px;
@@ -33,6 +34,20 @@
         position: absolute;
         left: 30px;
         top: 20px;
+        z-index: 10;
+        user-select: none;
+    }
+
+    &__time {
+        color: $light-text-color;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 36px;
+        position: absolute;
+        left: 80px;
+        top: 20px;
+        z-index: 10;
+        user-select: none;
     }
 
     &__ball {
@@ -41,6 +56,7 @@
         transform: translate(-50%, -50%);
         width: 25px;
         height: 25px;
+        user-select: none;
 
         @media screen and (min-width: 600px) {
             width: 50px;
@@ -52,6 +68,7 @@
         pointer-events: none;
         position: absolute;
         width: 50px;
+        user-select: none;
 
         @media screen and (min-width: 600px) {
             width: 100px;
@@ -64,6 +81,40 @@
         height: 1px;
         background-color: $light-text-color;
         margin: 0 auto;
+    }
+
+    &__backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $light-backdrop;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__play {
+        border-radius: 20px;
+        background-color: $bg-black-color;
+        box-shadow: $light-shadow;
+        padding: 10px 20px;
+        color: $btn-svg-color;
+        font-size: 12px;
+        font-weight: 400;
+        user-select: none;
+    }
+
+    &__info {
+        color: $light-text-color;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 24px;
+        text-align: center;
+        margin-bottom: 36px;
     }
 }
 
