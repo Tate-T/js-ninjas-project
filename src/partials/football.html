@@ -1,7 +1,15 @@
 <section id="7" class="football">
   <h2 class="football__title">Футбол</h2>
   <div id="football-field" class="football__field">
+    <div data-football="backdrop" class="football__backdrop">
+      <button data-football="play" class="football__play">PLay now</button>
+    </div>
+    <div data-football="end" class="football__backdrop is-hidden">
+      <p class="football__play">Ти забив <span id="football-output"></span> голів</p>
+      <button data-football="restart" class="football__play">Restart</button>
+    </div>
     <p id="football-count" class="football__count">0</p>
+    <p id="football-time" class="football__time">0:30</p>
     <picture>
       <source
         srcset="
@@ -35,5 +43,6 @@
       />
     </picture>
   </div>
+  <p class="football__info">Почніть гру та забийте як найбільше голів</p>
   <div class="football__line"></div>
 </section>
