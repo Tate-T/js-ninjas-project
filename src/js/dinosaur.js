@@ -3,7 +3,7 @@ const cactus = document.querySelector('#cactus');
 const title = document.querySelector('.dinosaur__title');
 const restartButton = document.querySelector('#restartButton');
 const endButton = document.querySelector('#endButton');
-const instruction = document.querySelector('#instruction');
+
 const startButton = document.querySelector("#startButton");
 
 
@@ -62,11 +62,10 @@ function restartGame() {
     cactus.style.animation = '';
     cactus.style.right = '-40px';
     title.textContent = 'Google динозавр';
-    instruction.style.display = 'block';
     restartButton.style.display = 'none';
     endButton.style.display = 'block';
     scoreInterval = setInterval(() => {
-        if (!gameOver) {
+        if (gameState !== GameStateOver) {
             score++;
         }
     }, 1000);
@@ -77,7 +76,6 @@ function endGame() {
     clearInterval(scoreInterval);
     cactus.style.animation = 'none';
     title.textContent = 'Игра окончена! Ваш счет: ' + score;
-    instruction.style.display = 'block';
     restartButton.style.display = 'block';
     endButton.style.display = 'none';
 }
