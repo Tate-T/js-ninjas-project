@@ -222,4 +222,19 @@ body.dark .header {
     &__text {
         color: $dark-text-color;
     }
+
+    &__sublist {
+        border: 1px solid $dark-text-color;
+        background: $dark-body-bg-color;
+        border-top: none;
+    }
+
+    &__subbtn {
+        color: $dark-text-color;
+        background-color: $dark-body-bg-color;
+
+        &:hover {
+            background-color: $dark-interactiv;
+        }
+    }
 }
