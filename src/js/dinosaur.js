@@ -32,8 +32,9 @@ function jump() {
     }, 500);
 }
 
-document.addEventListener('mousedown', (event) => {
-    if (event.button === 0) {
+document.addEventListener('keydown', (event) => {
+    event.preventDefault()
+    if (event.code === 'Space') {
         jump();
     }
 });
