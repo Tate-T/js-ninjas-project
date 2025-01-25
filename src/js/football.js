@@ -8,11 +8,29 @@ const gameOver = document.querySelector(`[data-football="end"]`);
 const timeOutput = document.querySelector('#football-time');
 const spanOutput = document.querySelector('#football-output');
 const restartBtn = document.querySelector(`[data-football="restart"]`);
+const tableBtn = document.querySelector('#table-btn');
+const table = document.querySelector(`[data-football="table"]`);
+const tableCloseBtn = document.querySelector('#table-close-btn');
+const page = document.querySelector('body');
+const tableList = document.querySelector('#football-table-list');
+const nameOutput = document.querySelector('#user-name-output');
 let countOfGoals = 0;
 let timeScore = 30;
 timeOutput.textContent = `0:${timeScore}`;
 let isPlaying = false;
 let isGoal = false;
+
+tableBtn.addEventListener('click', toggleModal);
+table.addEventListener('click', toggleModal);
+tableCloseBtn.addEventListener('click', toggleModal);
+
+function toggleModal(e) {
+  if (e.currentTarget === table && e.currentTarget !== e.target) {
+    return;
+  }
+  page.classList.toggle('no-scroll');
+  table.classList.toggle('is-hidden');
+}
 
 const ballWidth = ball.scrollWidth;
 const ballHeight = ball.scrollHeight;
@@ -30,12 +48,26 @@ const gatesY = (field.scrollHeight - gatesHeight) / 2;
 gates.style.right = `${30}px`;
 gates.style.top = `${gatesY}px`;
 
+function addRowToTable() {
+  if (tableList.firstElementChild.classList.contains('football__text')) {
+    tableList.innerHTML = '';
+  }
+  tableList.insertAdjacentHTML(
+    'beforeend',
+    `<div class="football__row">
+          <h3 class="football__header">${nameOutput.textContent}</h3>
+          <p class="football__score">${countOfGoals}</p>
+        </div>`
+  );
+}
+
 function setTime() {
   const interval = setInterval(() => {
     if (timeScore > 0) {
       timeScore -= 1;
       timeOutput.textContent = `0:${String(timeScore).padStart(2, '0')}`;
     } else {
+      addRowToTable();
       isPlaying = false;
       spanOutput.textContent = `${countOfGoals}`;
       gameOver.classList.toggle('is-hidden');
@@ -47,6 +79,7 @@ function setTime() {
 restartBtn.addEventListener('click', () => {
   isPlaying = true;
   countOfGoals = 0;
+  countOutput.textContent = '0';
   timeScore = 30;
   timeOutput.textContent = `0:${timeScore}`;
   gameOver.classList.toggle('is-hidden');
