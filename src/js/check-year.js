@@ -1,6 +1,8 @@
-function checkLeapYear() {
-    const birthYear = document.getElementById("birthYear").value;
-    const resultText = document.getElementById("result");
+const birthYear = document.getElementById("birthYear").value;
+const resultText = document.getElementById("result");
+
+function checkLeapYear(event) {
+    event.preventDefault();
 
     const year = Number.parseInt(birthYear);
 
@@ -13,4 +15,4 @@ function checkLeapYear() {
     }
 }
 
-document.getElementById("button").addEventListener("click", checkLeapYear);
+document.getElementById("yearForm").addEventListener("submit", checkLeapYear);

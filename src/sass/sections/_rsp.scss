@@ -11,7 +11,7 @@
         text-align: center;
         margin-bottom: 30px;
 
-        @media screen and (min-width: 768px) { }
+        @media screen and (min-width: 768px) {}
 
         @media screen and (min-width: 1200px) {
             font-size: 16px;
@@ -47,7 +47,7 @@
         margin-bottom: 36px;
     }
 
-    &__btn {
+    &__text3 {
         color: $btn-svg-color;
         font-family: "Montserrat Alternates";
         font-size: 12px;
@@ -58,9 +58,9 @@
         background: $bg-black-color;
         padding: 10px 20px;
         gap: 10px;
+        width: max-content;
         margin: 0 auto;
         margin-bottom: 46px;
-        width: max-content;
     }
 
     &__line {
@@ -68,6 +68,7 @@
         height: 1px;
         background-color: $light-text-color;
         margin: 0 auto;
+
         @media screen and (min-width: 768px) {
             width: 536px;
         }
@@ -76,11 +77,19 @@
     &__cont {
         display: block;
         justify-content: center;
-        gap: 114px;
+        gap: 115px;
 
         @media screen and (min-width: 650px) {
             display: flex;
         }
+    }
+
+    &__text {
+        color: $light-text-color;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
 
@@ -95,5 +104,9 @@ body.dark .rsp {
 
     &__line {
         stroke: $dark-text-color;
+    }
+
+    &__text {
+        color: $dark-text-color;
     }
 }
