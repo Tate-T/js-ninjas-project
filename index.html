@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/js-ninjas-project/assets/index-8135376c.js"></script>
-    <link rel="stylesheet" href="/js-ninjas-project/assets/index-0c0e46b4.css">
+    <script type="module" crossorigin src="/js-ninjas-project/assets/index-47f923cd.js"></script>
+    <link rel="stylesheet" href="/js-ninjas-project/assets/index-aa477b96.css">
   </head>
   <body class="no-scroll">
     <header class="header">
@@ -159,14 +159,14 @@
 </section>
         <section id="1" class="year">
     <h2 class="year__title">Перевір в який рік ти народився</h2>
-    <form action="" class="year__form">
+    <form id="yearForm" class="year__form">
         <div class="year__box">
             <label class="year__label">
                 <input id="birthYear" class="year__input" type="number" placeholder="Введіть рік народження">
             </label>
             <button id="button" class="year__button">
                 <svg class="year__svg" width="15" height="15">
-                    <use href="../svg/icons.svg#icon-search"></use>
+                    <use href="/js-ninjas-project/assets/icons-029903d8.svg#icon-search"></use>
                 </svg>
             </button>
         </div>
@@ -183,7 +183,7 @@
             </label>
             <button id="btn" class="number__button">
                 <svg class="number__svg" width="15" height="15">
-                    <use href="../svg/icons.svg#icon-search"></use>
+                    <use href="/js-ninjas-project/assets/icons-029903d8.svg#icon-search"></use>
                 </svg>
             </button>
         </div>
@@ -196,7 +196,7 @@
   <div class="rsp__cont">
     <ul class="rsp__list">
       <li class="rsp__item">
-        <button  id="rock" class="rsp__button">
+        <button id="rock" class="rsp__button">
           <picture>
             <source srcset="
               ./img/1x/rps/stone@1x.webp 1x,
@@ -207,7 +207,7 @@
         </button>
       </li>
       <li class="rsp__item">
-        <button  id="scissors" class="rsp__button">
+        <button id="scissors" class="rsp__button">
           <picture>
             <source srcset="
               ./img/1x/rps/scissors@1x.webp 1x,
@@ -237,7 +237,7 @@
   </div>
 
   <p id="round" class="rsp__result">Ви виграли раунд!</p>
-  <p class="rsp__btn">Варіант комп’ютера</p>
+  <p class="rsp__text3" id="computerVarient">Варіант комп’ютера</p>
   <div class="rsp__line"></div>
 </section>
         <section id="4" class="calculator">
