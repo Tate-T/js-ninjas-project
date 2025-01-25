@@ -1,10 +1,11 @@
-const birthYear = document.getElementById("birthYear").value;
+const birthYear = document.getElementById("birthYear");
 const resultText = document.getElementById("result");
 
 function checkLeapYear(event) {
     event.preventDefault();
 
-    const year = Number.parseInt(birthYear);
+    const year = Number.parseInt(birthYear.value);
+    console.log(year)
 
     if (year % 4 === 0 && year % 100 !== 0) {
         resultText.textContent = `Ви народилися у високосний рік`;
