@@ -4,9 +4,19 @@ const maxScore = 3;
 // const resultOfText = document.querySelector("#round");
 // console.log(resultOfText);
 
+const computerVarientOutput = document.getElementById("computerVarient")
+
 function playGame(userChoice) {
   const choices = ["rock", "paper", "scissors"];
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+  if(computerChoice === choices[0]) {
+    computerVarientOutput.textContent = "Камінь";
+  } else if(computerChoice === choices[1]) {
+    computerVarientOutput.textContent = "Папір";
+  } else if(computerChoice === choices[2]) {
+    computerVarientOutput.textContent = "Ножиці";
+  }
 
   let outcome;
   if (userChoice === computerChoice) {
