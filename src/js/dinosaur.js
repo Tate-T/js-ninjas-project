@@ -75,7 +75,7 @@ function endGame() {
     gameState = GameStateOver;
     clearInterval(scoreInterval);
     cactus.style.animation = 'none';
-    title.textContent = 'Игра окончена! Ваш счет: ' + score;
+    title.textContent = 'Гра закінчена! Ваш рахунок: ' + score;
     restartButton.style.display = 'block';
     endButton.style.display = 'none';
 }
