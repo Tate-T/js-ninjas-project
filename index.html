@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/js-ninjas-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-ninjas-project/assets/index-530acdd0.css">
+    <link rel="stylesheet" href="/js-ninjas-project/assets/index-ce47d2fc.css">
   </head>
   <body class="no-scroll">
     <header class="header">
@@ -322,7 +322,9 @@
       <button data-football="play" class="football__play">PLay now</button>
     </div>
     <div data-football="end" class="football__backdrop is-hidden">
-      <p class="football__play">Ти забив <span id="football-output"></span> голів</p>
+      <p class="football__play">
+        Ти забив <span id="football-output"></span> голів
+      </p>
       <button data-football="restart" class="football__play">Restart</button>
     </div>
     <p id="football-count" class="football__count">0</p>
@@ -353,6 +355,24 @@
         alt="Ворота"
       />
     </picture>
+  </div>
+  <button id="table-btn" class="football__btn">Переглянути результати</button>
+  <div data-football="table" class="backdrop is-hidden">
+    <div class="football__modal">
+      <button id="table-close-btn" class="football__close">
+        <svg class="football__dagger" width="15" height="15">
+          <use href="/js-ninjas-project/assets/icons-029903d8.svg#close-modal"></use>
+        </svg>
+      </button>
+      <h2 class="football__subtitle">Таблиця результатів</h2>
+      <div id="football-table-list" class="football__table">
+        <p class="football__text">Ще не має результатів</p>
+        <!-- <div class="football__row">
+          <h3 class="football__header">Анна</h3>
+          <p class="football__score">25</p>
+        </div> -->
+      </div>
+    </div>
   </div>
   <p class="football__info">Почніть гру та забийте як найбільше голів</p>
   <div class="football__line"></div>
