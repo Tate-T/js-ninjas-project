@@ -36,6 +36,10 @@
         height: 700px;
         align-content: start;
 
+        @media screen and (min-width: 407px) {
+            height: 460px;
+        }
+
         @media screen and (min-width: 520px) {
             height: 340px;
         }
