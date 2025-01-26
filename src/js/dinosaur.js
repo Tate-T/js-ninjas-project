@@ -33,8 +33,7 @@ function jump() {
 }
 
 document.addEventListener('keydown', (event) => {
-    event.preventDefault()
-    if (event.code === 'Space') {
+    if (event.code === 'Enter') {
         jump();
     }
 });
