@@ -53,7 +53,7 @@ function addRowToTable() {
     tableList.innerHTML = '';
   }
   tableList.insertAdjacentHTML(
-    'beforeend',
+    "afterbegin",
     `<div class="football__row">
           <h3 class="football__header">${nameOutput.textContent}</h3>
           <p class="football__score">${countOfGoals}</p>
